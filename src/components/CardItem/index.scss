@@ -1,0 +1,69 @@
+@import "@/assets/css/mixin.scss";
+.card-item {
+  position: relative;
+  display: flex;
+  margin: 30px 0 44px;
+  padding: 30px 212px 48px 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 10px #e4e4e4;
+
+  &::after {
+    position: absolute;
+    bottom: -20px;
+    left: 70px;
+    display: block;
+    content: "";
+    border-top: 24px solid #ffffff;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+  }
+
+  .item {
+    display: inline-block;
+  }
+
+  .img-box {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border: 2px solid #229e8e;
+    border-radius: 50%;
+    flex-shrink: 0;
+    @include flex-center();
+  }
+
+  .text-box {
+    @include font-style(24px);
+    .title {
+      font-weight: bold;
+      font-size: 28px;
+    }
+    .detail {
+      margin-top: 14px;
+      font-size: 20px;
+      color: #848484;
+    }
+  }
+
+  .btn-box {
+    position: absolute;
+    right: 38px;
+    width: 162px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 24px;
+    background-color: #c3c3c3;
+    color: #ffffff;
+
+    &.yellow {
+      background-color: #fdd000;
+    }
+
+    &.black {
+      background-color: #434343;
+    }
+  }
+}

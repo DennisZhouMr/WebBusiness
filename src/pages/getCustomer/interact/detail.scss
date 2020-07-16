@@ -1,0 +1,107 @@
+@import "@/assets/css/mixin.scss";
+@import '../../../components/NavBar/index.scss';
+
+.interact-detail_container {
+  .interact-detail_title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 42px;
+    @include font-style(32px, #000000, bold);
+  }
+
+  .interact-detail_desc {
+    margin-bottom: 98px;
+    line-height: 32px;
+    @include font-style(24px, #000000);
+  }
+
+  .at-tabs__header {
+    height: 80px;
+    border-radius: 10px;
+    background-color: transparent;
+    @include font-style(28px, #434343);
+
+    .at-tabs__item {
+      flex: none;
+      line-height: 80px;
+      padding: 0;
+      margin-right: 60px;
+    }
+
+    .at-tabs__item-underline {
+      width: 56px;
+      height: 4px;
+      background: #229e8e;
+    }
+
+    .at-tabs__item--active {
+      @include font-style(28px, #000000, bold);
+    }
+  }
+
+  .at-tabs__underline {
+    background-color: transparent;
+  }
+
+  .effect-dl {
+    padding-top: 40px;
+
+    .dt {
+      margin-bottom: 60px;
+      @include font-style(28px, #848484, bold);
+    }
+
+    .dd-box {
+      flex-wrap: wrap;
+
+      .dd {
+        width: 50%;
+        margin-bottom: 60px;
+        text-align: center;
+
+        .num {
+          margin-bottom: 30px;
+          line-height: 52px;
+          @include font-style(40px, #000000, bold);
+        }
+
+        .text {
+          line-height: 36px;
+          @include font-style(28px, #848484);
+        }
+      }
+    }
+  }
+
+  .detail-dl {
+    padding-top: 40px;
+    line-height: 36px;
+    @include font-style(28px, #848484, bold);
+
+    .dt,
+    .dd {
+      padding-bottom: 15px;
+    }
+
+    .dd {
+      @include flex-center(row, space-between, flex-start);
+      flex-wrap: wrap;
+    }
+
+    .tit {
+      margin-top: 15px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      font-weight: normal;
+    }
+  }
+
+  .end-button {
+    border-color: #000000;
+    color: #434343;
+  }
+}

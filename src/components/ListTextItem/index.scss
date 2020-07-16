@@ -1,0 +1,11 @@
+@import "@/assets/css/mixin.scss";
+
+.list-text-item {
+  line-height: 36px;
+  color: inherit;
+  @include font-style(28px, #434343);
+
+  .lti-label {
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,75 @@
+@import "@/assets/css/mixin.scss";
+
+.getCustomer-active_container {
+  position: relative;
+  width: 91.5%;
+  line-height: 32px;
+  margin: 40px auto 0;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 6px #e4e4e4;
+  @include font-style(24px, #848484);
+  overflow: hidden;
+  .content {
+    padding: 20px;
+    .tit {
+      line-height: 36px;
+      margin-bottom: 6px;
+      @include flex-center(row, flex-start);
+      @include font-style(28px, #000000);
+
+      .default-button {
+        width: 120px;
+        height: 36px;
+        line-height: 36px;
+        margin-left: 20px;
+        border-color: #e4e4e4;
+        padding: 0;
+        border-radius: 6px;
+        background: none;
+        @include font-style(20px, #848484);
+      }
+    }
+
+    .desc {
+      @include flex-center(row, space-between, flex-end);
+      .at-button {
+        padding: 0;
+        width: 120px;
+        height: 50px;
+        line-height: 48px;
+        @include font-style(24px, #434343, bold);
+        background-color: #fdd000;
+        border-color: #fdd000;
+      }
+    }
+
+    .time {
+      margin-top: 25px;
+    }
+  }
+  .group-bottom {
+    background: #ededed;
+    border-radius: 0 0 20px 20px;
+    padding: 16px 0;
+    @include font-style(28px, #434343, bold);
+    view {
+      text-align: center;
+      &:first-child {
+        border-right: 2px solid #434343;
+      }
+    }
+  }
+  .tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 0 20px 0 20px;
+    background-color: #ff3f81;
+    @include font-style(20px, #ffffff);
+  }
+}

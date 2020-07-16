@@ -1,0 +1,27 @@
+.info-container {
+  .data-wrap {
+    width: 94.67%;
+    margin: 0 auto 32px;
+    display: flex;
+  }
+
+  .today-wrap {
+    display: flex;
+    align-items: center;
+    width: 94.67%;
+    margin: 0 auto 42px;
+
+    .order-number {
+      width: 55.78%;
+      height: 56px;
+      line-height: 56px;
+      margin-right: 20px;
+      padding: 0 40px;
+      border-radius: 30px;
+      box-sizing: border-box;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, .4) inset;
+      font-size: 24px;
+      color: #848484;
+    }
+  }
+}

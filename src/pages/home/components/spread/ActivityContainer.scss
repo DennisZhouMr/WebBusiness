@@ -1,0 +1,23 @@
+.activity-container {
+  width: 94.67%;
+  margin: 0 auto;
+  padding-bottom: 56px;
+
+  .caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-center;
+    margin-bottom: 32px;
+
+    .tit {
+      font-size: 32px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .more {
+      font-size: 24px;
+      color: #229E8E
+    }
+  }
+}

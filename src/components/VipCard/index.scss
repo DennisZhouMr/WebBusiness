@@ -1,0 +1,147 @@
+@import "@/assets/css/mixin.scss";
+
+.vipCard_container {
+  margin-bottom: 29px;
+  border-radius: 20px;
+  position: relative;
+  background: linear-gradient(
+    left,
+    #c3c3c3,
+    #e0e0e0,
+    #e0e0e0,
+    #d1d1d1,
+    #a8a8a8
+  );
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: url("~@/assets/images/vipCardShadow.png") no-repeat bottom;
+    background-size: 100% auto;
+    height: 50px;
+  }
+  .vipCard_wrap {
+    position: relative;
+    padding: 20px 30px 20px 20px;
+    min-height: 230px;
+    box-sizing: border-box;
+    background: url("~@/assets/images/vipCardBack.png") no-repeat right bottom;
+    background-size: 255px auto;
+  }
+
+  .vipCard_caption {
+    @include flex-center(row, flex-start);
+    position: relative;
+    width: 300px;
+    height: 70px;
+    padding-left: 90px;
+    border-radius: 70px;
+    background: linear-gradient(left, #c3c3c3, #dbdbdb, #c3c3c3);
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .circle-wrap {
+      position: absolute;
+      left: -1px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 80px;
+      border: 10px solid #fdd000;
+      box-sizing: border-box;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+
+      .circle-box {
+        @include flex-center();
+        width: 57px;
+        height: 57px;
+        border-radius: 57px;
+        background-color: #ffffff;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+
+        .image {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .icon-star {
+      width: 28px;
+      height: auto;
+      display: flex;
+    }
+
+    .user-info {
+      @include flex-center(row, flex-start);
+
+      .name {
+        margin-left: 4px;
+        @include font-style(24px, #000000);
+      }
+    }
+
+    .tit {
+      flex: 1;
+      margin-left: 4px;
+      @include font-style(28px, #000000);
+    }
+  }
+
+  .level-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 20px 0 20px;
+    @include font-style(24px, #000000);
+    text-align: center;
+    background-color: #fdd000;
+    &.level-box-type {
+      background-color: #434343;
+      color: #fff;
+    }
+  }
+
+  .vipCard_main {
+    @include flex-center(row, space-between, null);
+    margin-top: 20px;
+    padding-left: 90px;
+
+    .coupon {
+      @include flex-center(row, flex-start, flex-end);
+      @include font-style(24px, #000000);
+
+      .num {
+        letter-spacing: 4px;
+        @include flex-center(row, flex-start, flex-start);
+        @include font-style(36px, #000000, bold);
+
+        .text {
+          @include font-style(28px, #000000);
+        }
+      }
+    }
+    .detail {
+      @include font-style(24px, #fff);
+      height: 190px;
+      display: flex;
+      flex-direction: column;
+      .info {
+        flex: 1;
+      }
+      .size {
+        font-size: 28px;
+      }
+      .no {
+        font-weight: bold;
+      }
+    }
+  }
+}

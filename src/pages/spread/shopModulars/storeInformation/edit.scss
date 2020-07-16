@@ -1,0 +1,43 @@
+@import "@/assets/css/mixin.scss";
+.storeInfo-edit-wrapper {
+  padding-bottom: 20px;
+  .shopkeeper-main {
+    flex-grow: 1;
+    overflow-x: hidden;
+    width: 94.67%;
+    margin: 0 auto;
+    .shopkeeper-group {
+      display: flex;
+      text {
+        @include font-style(24px, #fff);
+      }
+    }
+    .store-edit-list {
+      .list-item-time {
+        border-bottom: none !important;
+        min-height: 0px !important;
+        padding: 8px !important;
+        &.border {
+          border-bottom: 2px solid #e4e4e4 !important;
+        }
+        .list-item-content_title {
+          color: #000 !important;
+          font-weight: bold !important;
+        }
+      }
+    }
+    .place {
+      @include flex-center(row, flex-end, center);
+    }
+    .textarea-content {
+      padding: 0;
+      background: none;
+      border: none;
+      .at-textarea__textarea {
+        height: 40px;
+        text-align: right;
+        font-size: 28px;
+      }
+    }
+  }
+}

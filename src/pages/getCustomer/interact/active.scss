@@ -1,0 +1,75 @@
+@import "@/assets/css/mixin.scss";
+@import '../../../components/NavBar/index.scss';
+@import '../components/ActiveCard/index.scss';
+
+.interact-active_container {
+  padding-top: 96px;
+
+  .nav-bar-container .nav-bar-left {
+    flex-shrink: 0;
+    flex: none;
+    width: 64px;
+  }
+
+  .interact-active_caption {
+    @include flex-center(row, flex-start);
+    width: 91.5%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 40px;
+    border-radius: 10px 10px 0 0;
+    @include font-style(24px, #ffffff);
+    background-color: #434343;
+    box-sizing: border-box;
+
+    .icon-box {
+      @include flex-center();
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      border-radius: 30px;
+      border: 1PX solid #FDD000
+    }
+  }
+
+  .interact-active_main_box {
+    width: 94.67% !important;
+  }
+
+  .at-tabs__header {
+    height: 80px;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    @include font-style(28px, #434343);
+    box-shadow: 0 4px 6px #e4e4e4;
+
+    .at-tabs__item {
+      flex: none;
+      line-height: 80px;
+      padding: 0;
+      margin: 0 30px;
+    }
+
+    .at-tabs__item-underline {
+      width: 56px;
+      height: 4px;
+      background: #229e8e;
+    }
+
+    .at-tabs__item--active {
+      font-weight: bold;
+    }
+  }
+
+  .at-tabs__underline {
+    background-color: transparent;
+  }
+
+  .second-page_footer_wrap {
+    height: 120px;
+
+    .default-button {
+      background-color: transparent;
+    }
+  }
+}

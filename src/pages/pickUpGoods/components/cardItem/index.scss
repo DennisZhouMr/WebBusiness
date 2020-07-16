@@ -1,0 +1,42 @@
+@import "@/assets/css/mixin.scss";
+
+.coupon-card_item {
+  @include flex-center(row, space-between, flex-start);
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #EDEDED;
+  color: #434343;
+
+  .card-tit {
+    line-height: 36px;
+    font-size: 28px;
+  }
+
+  .card-desc {
+    line-height: 26px;
+    font-size: 24px;
+    color: #848484;
+  }
+
+  .card-time {
+    margin-top: 20px;
+    line-height: 26px;
+    font-size: 24px;
+  }
+
+  .card-num_box {
+    line-height: 36px;
+    @include font-style(32px, #434343, bold);
+
+    .card-num,.card-text{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .card-num {
+      margin-right: 6px;
+      line-height: 56px;
+      @include font-style(50px, #434343, bold);
+    }
+  }
+}

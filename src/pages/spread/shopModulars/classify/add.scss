@@ -1,0 +1,33 @@
+@import "@/assets/css/mixin.scss";
+@import "@/components/SmallSwitch/index.scss";
+
+.classify-add-wrapper {
+  padding-bottom: 20px;
+
+  .classify-add-main {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-x: hidden;
+    padding-top: 28px;
+    height: 100%;
+
+    .classify-add-info {
+      margin: 0px 0px 30px;
+      background: none;
+      box-shadow: none;
+      padding: 0;
+
+      .empty {
+        @include font-style(24px, #e0004e);
+      }
+    }
+  }
+
+  .tags {
+    line-height: 32px;
+    color: #848484;
+    font-size: 24px;
+  }
+}

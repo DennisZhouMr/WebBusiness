@@ -1,0 +1,35 @@
+@import "@/assets/css/mixin.scss";
+.underway-container {
+  padding: 40px 30px 0;
+  .coupon-list {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #e4e4e4;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    @include font-style(24px, #848484);
+    .content {
+      flex: 1;
+      text {
+        display: block;
+      }
+      .title {
+        @include font-style(28px, #000);
+      }
+      .expiry-date {
+        padding-top: 24px;
+      }
+    }
+    .type {
+      min-width: 120px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border: 2px solid #ff3f81;
+      @include font-style(20px, #ff3f81);
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import "@/assets/css/mixin.scss";
+@import "../components/FloatLayoutPicker/index.scss";
+
+.member-wrapper {
+  padding-bottom: 20px;
+  .member-main {
+    padding: 0 20px;
+    flex-grow: 1;
+    overflow-x: hidden;
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .top {
+      background: #434343;
+      border-radius: 10px 10px 0 0;
+      padding: 0 20px 0 40px;
+      height: 60px;
+      font-size: 24px;
+      margin: 0 30px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      .left {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+      .icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #fdd000;
+        margin-right: 10px;
+        @include flex-center();
+      }
+      .right {
+        padding: 0 40px;
+      }
+    }
+    .member-content {
+      background: #f0f0f0;
+      border-radius: 20px;
+      box-sizing: border-box;
+      box-sizing: 0 4px 6px #e4e4e4;
+      padding: 10px 0 20px;
+      box-sizing: border-box;
+      .at-col {
+        @include flex-center(column);
+        @include font-style(28px, #434343);
+        line-height: 48px;
+      }
+      .number {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+    }
+    .member-container {
+      margin: 60px 30px 0;
+      .operation {
+        @include flex-center(row, null);
+        .all {
+          @include font-style(28px, #000);
+          @include flex-center(row, null);
+          text {
+            min-width: 140px;
+          }
+        }
+        .total {
+          @include font-style(24px, #a0a0a0);
+          @include flex-center(row, null);
+          text {
+            margin-right: 10px;
+          }
+        }
+        .icon {
+          display: flex;
+          view {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+      .member-list {
+        margin-top: 26px;
+        .member-list-item {
+          padding: 34px 0;
+          display: flex;
+          line-height: 34px;
+          border-bottom: 2px solid #e4e4e4;
+          @include font-style();
+          .content {
+            flex: 1;
+            text {
+              display: block;
+              text-align: left;
+            }
+          }
+          .extra {
+            text {
+              display: block;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}

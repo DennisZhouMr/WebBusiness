@@ -1,0 +1,14 @@
+@import "@/assets/css/mixin.scss";
+
+.getCustomer-addLevel_container {
+  @include flex-center();
+  height: 230px;
+  margin-bottom: 30px;
+  border: 1PX dashed #c3c3c3;
+  @include font-style(28px, #FF3F81);
+  border-radius: 20px;
+
+  .text{
+    padding-left: 8px;
+  }
+}
