@@ -1,0 +1,60 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="select-product-container">
+        <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-top="{{scrollTop}}" style="{{anonymousState__temp}}" class="menu-wrapper">
+            <view class="menu-list">
+                <block>
+                    <block wx:if="{{goodsList && goodsList.length > 0}}">
+                        <view>
+                            <view wx:key="id" class="{{'menu-list-item ' + (menuActive == index ? 'item--active' : '')}}" bindtap="anonymousFunc0" wx:for="{{loopArray145}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                                <view class="text">{{item.$original.name}}</view>
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <view class="menu-list-item item--active">默认分类</view>
+                    </block>
+                </block>
+                <view class="menu-list-item" bindtap="anonymousFunc1">+ 分类</view>
+            </view>
+        </scroll-view>
+        <scroll-view scroll-y="{{true}}" scroll-with-animation="{{true}}" scroll-top="{{scrollTop}}" style="{{anonymousState__temp2}}" class="select-product-wrapper">
+            <block>
+                <block wx:if="{{goodsList && goodsList.length > 0}}">
+                    <view>
+                        <view wx:key="id" class="goods-list-hook" wx:for="{{loopArray146}}" wx:for-item="item" wx:for-index="index">
+                            <view class="title"><text>●</text>{{item.$original.name}}（{{item.$original.goods.length}}个）</view>
+                            <view class="goods-content">
+                                <view class="goods-list">
+                                    <view class="goods-item" wx:key="goods_id" wx:for="{{item.$anonymousCallee__42}}" wx:for-item="goods" wx:for-index="_anonIdx2">
+                                        <view class="content">
+                                            <view class="picture">
+                                                <icon-font compid="{{goods.$compid__1803}}"></icon-font>
+                                            </view>
+                                            <view class="detail">
+                                                <view class="top">
+                                                    <view class="goods-name">{{goods.$original.name}}</view>
+                                                </view>
+                                                <view class="goods-price">
+                                                    <view class="money"><text>¥{{goods.$original.price}}</text>/份</view>
+                                                    <cart-control compid="{{goods.$compid__1804}}"></cart-control>
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </block>
+                <block wx:else>
+                    <view>
+                        <view class="title"><text>●</text>默认分类（0个）</view>
+                        <view class="goods-content">
+                            <view class="empty">目前没有预选的商品</view>
+                        </view>
+                    </view>
+                </block>
+            </block>
+        </scroll-view>
+    </view>
+</block>

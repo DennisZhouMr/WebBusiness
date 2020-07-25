@@ -1,0 +1,7 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="root" style="{{anonymousState__temp}}">
+        <view class="root-main" style="{{anonymousState__temp2}}">
+            <slot></slot>
+        </view>
+    </view>
+</block>

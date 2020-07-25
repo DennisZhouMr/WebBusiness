@@ -1,0 +1,53 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1666}}">
+        <view class="rebate-set_container">
+            <view class="rebate-set_caption_wrap">
+                <nav-bar compid="{{$compid__1667}}">
+                    <icon-font compid="{{$compid__1668}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="rebate-set_main_wrap">
+                <view class="rebate-set_main_box">
+                    <view class="font-4 tit">积分返利</view>
+                    <view class="li border-bottom flex rule-box">
+                        <view>
+                            <view class="font-3">积分返利规则<text class="font-1">(系统默认)</text>
+                            </view>
+                            <view class="font-1">赠送积分值等于买单实付金额</view>
+                        </view>
+                        <view class="flex-shrink font-3">消费 1 元 赠送 1 积分</view>
+                    </view>
+                    <view class="{{'li flex ' + (!switchIsOpen && 'border-bottom')}}">
+                        <view class="flex1 font-3">自定义卡片颜色</view>
+                        <view class="flex-shrink">
+                            <small-switch compid="{{$compid__1669}}"></small-switch>
+                        </view>
+                    </view>
+                    <block wx:if="{{switchIsOpen}}">
+                        <view class="set-card-style-box">
+                            <view class="rebate-card">
+                                <view class="rebate-card_caption" style="{{anonymousState__temp2}}"></view>
+                                <view class="rebate-card_main"></view>
+                            </view>
+                            <view>纯色系</view>
+                            <view class="color-box">
+                                <view class="circle-color-box" wx:for="{{loopArray126}}" wx:for-item="item" wx:for-index="__index1">
+                                    <view class="circle-color" bindtap="anonymousFunc1" style="{{item.$loopState__temp4}}" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}"></view>
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                    <view class="rebate-set-textarea_box">
+                        <view class="t-tit font-4">消费权益说明</view>
+                        <at-textarea compid="{{$compid__1670}}"></at-textarea>
+                    </view>
+                </view>
+            </view>
+            <view class="rebate-set_footer_wrap">
+                <view class="button-position">
+                    <at-button compid="{{$compid__1671}}">保存</at-button>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

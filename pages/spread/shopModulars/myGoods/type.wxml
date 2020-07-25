@@ -1,0 +1,25 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1317}}">
+        <view class="second-page_container common-wrapper type-wrapper">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1318}}">
+                    <icon-font compid="{{$compid__1319}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap ">
+                <scroll-view class="type-main" scroll-y="{{true}}">
+                    <view wx:key="id" wx:for="{{loopArray99}}" wx:for-item="item" wx:for-index="_anonIdx2">
+                        <view class="type-tit">{{item.$original.type}}</view>
+                        <card-item wx:key="id" compid="{{item.$compid__1316}}"></card-item>
+                    </view>
+                </scroll-view>
+            </view>
+            <view class="second-page_footer_wrap">
+                <custom-checkbox compid="{{$compid__1320}}">
+                    <view>我已阅读并同意<text class="rule">《商品发布协议》</text>
+                    </view>
+                </custom-checkbox>
+            </view>
+        </view>
+    </root>
+</block>

@@ -1,0 +1,35 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1712}}">
+        <view class="second-page_container interact-active_container">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1713}}">
+                    <icon-font compid="{{$compid__1714}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <view class="second-page_main_box interact-active_main_box">
+                    <view class="interact-active_caption">
+                        <view class="icon-box">
+                            <icon-font compid="{{$compid__1715}}"></icon-font>
+                        </view><text>营销管理</text>
+                    </view>
+                    <view>
+                        <at-tabs compid="{{$compid__1716}}">
+                            <at-tabs-pane compid="{{$compid__1717}}">
+                                <active-card wx:key="id" wx:for="{{loopArray128}}" wx:for-item="item" wx:for-index="__index0" compid="{{item.$compid__1710}}"></active-card>
+                            </at-tabs-pane>
+                            <at-tabs-pane compid="{{$compid__1718}}">
+                                <active-card wx:key="id" wx:for="{{loopArray129}}" wx:for-item="item" wx:for-index="__index1" compid="{{item.$compid__1711}}"></active-card>
+                            </at-tabs-pane>
+                        </at-tabs>
+                    </view>
+                </view>
+            </view>
+            <view class="second-page_footer_wrap">
+                <view class="resend-button-position button-position">
+                    <at-button compid="{{$compid__1719}}">返回</at-button>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

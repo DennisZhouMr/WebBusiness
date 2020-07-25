@@ -1,0 +1,102 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1020}}">
+        <view class="second-page_container">
+            <view class="second-page_caption_wrap">
+                <second-caption compid="{{$compid__1021}}"></second-caption>
+            </view>
+            <view class="second-page_main_wrap">
+                <view class="system-index-wrap">
+                    <view class="card-container">
+                        <view class="card-caption at-row at-row__justify--between at-row__align--center">
+                            <view>商城设置</view>
+                            <view>
+                                <icon-font compid="{{$compid__1022}}"></icon-font>
+                            </view>
+                        </view>
+                        <view class="card-main">
+                            <view class="card-item">
+                                <view class="c-tit">今日数据</view>
+                                <view class="at-row">
+                                    <view class="at-col">
+                                        <view class="c-label">访问数</view>
+                                        <view class="c-content">0</view>
+                                    </view>
+                                    <view class="at-col">
+                                        <view class="c-label">订单数</view>
+                                        <view class="c-content">0</view>
+                                    </view>
+                                    <view class="at-col">
+                                        <view class="c-label">订单金额</view>
+                                        <view class="c-content">0</view>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="card-item">
+                                <view class="c-tit">总计数据</view>
+                                <view class="at-row">
+                                    <view class="at-col">
+                                        <view class="c-content">0</view>
+                                    </view>
+                                    <view class="at-col">
+                                        <view class="c-content">0</view>
+                                    </view>
+                                    <view class="at-col">
+                                        <view class="c-content">0</view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="at-row at-row__justify--between menu-wrap">
+                        <view class="at-col" bindtap="anonymousFunc0">
+                            <view class="icon-box at-row at-row__justify--center at-row__align--center">
+                                <icon-font compid="{{$compid__1023}}"></icon-font>
+                            </view>
+                            <view>我要核销</view>
+                        </view>
+                        <view class="at-col" bindtap="anonymousFunc1">
+                            <view class="icon-box at-row at-row__justify--center at-row__align--center">
+                                <icon-font compid="{{$compid__1024}}"></icon-font>
+                            </view>
+                            <view>订单管理</view>
+                        </view>
+                        <view class="at-col" bindtap="anonymousFunc2">
+                            <view class="icon-box at-row at-row__justify--center at-row__align--center">
+                                <icon-font compid="{{$compid__1025}}"></icon-font>
+                            </view>
+                            <view>商品管理</view>
+                        </view>
+                        <view class="at-col">
+                            <view class="icon-box at-row at-row__justify--center at-row__align--center">
+                                <icon-font compid="{{$compid__1026}}"></icon-font>
+                            </view>
+                            <view>发布商品</view>
+                        </view>
+                    </view>
+                    <view class="online-order">
+                        <view class="at-row at-row__justify--between title-box">
+                            <view class="tit ellipsis">线上订单</view>
+                            <view>
+                                <view class="span">所有线上订单</view>
+                                <view class="c-icon">
+                                    <icon-font compid="{{$compid__1027}}"></icon-font>
+                                </view>
+                            </view>
+                        </view>
+                        <view>
+                            <view class="no-data">暂无商城订单</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="second-page_footer_wrap" style="{{anonymousState__temp2}}">
+                <view class="btn-box">
+                    <at-button compid="{{$compid__1028}}">生成门店海报</at-button>
+                </view>
+                <view class="btn-box btn-box-right">
+                    <at-button compid="{{$compid__1029}}">分享我的店铺</at-button>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

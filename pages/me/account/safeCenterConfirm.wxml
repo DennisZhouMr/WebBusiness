@@ -1,0 +1,16 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1605}}">
+        <view class="common-wrapper account-wrapper">
+            <caption compid="{{$compid__1606}}"></caption>
+            <view class="account-main">
+                <view class="safe-message">
+                    <view class="safe-title">以下信息将被清空且无法找回：</view><text>1、身份、账户信息</text><text>2、该账号的门店员工信息</text>
+                </view>
+            </view>
+            <view class="button-position">
+                <view class="button-group"><text bindtap="anonymousFunc0">返回</text><text bindtap="anonymousFunc1">下一步</text>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

@@ -1,0 +1,44 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1188}}">
+        <view class="common-wrapper sale-wrapper">
+            <nav-bar compid="{{$compid__1189}}"></nav-bar>
+            <view class="sale-main">
+                <view class="header-title">
+                    <view class="title">券名称</view>
+                    <view>营销活动名称使用中</view>
+                </view>
+                <at-tabs compid="{{$compid__1190}}">
+                    <at-tabs-pane compid="{{$compid__1191}}">
+                        <view class="sale-container">
+                            <view class="sale-list">
+                                <view class="sale-list-item">
+                                    <view class="content">优惠名称</view>
+                                    <view class="extra">读取名称参数</view>
+                                </view>
+                                <view class="sale-list-item">
+                                    <view class="content">优惠类型</view>
+                                    <view class="extra">整单折扣</view>
+                                </view>
+                                <view class="sale-list-item">
+                                    <view class="content">有效时间</view>
+                                    <view class="extra">永久有效</view>
+                                </view>
+                                <view class="sale-list-item">
+                                    <view class="content">整单折扣率</view>
+                                    <view class="extra">0%</view>
+                                </view>
+                                <view class="sale-list-item">
+                                    <view class="content">不参与活动的商品(0)</view>
+                                </view>
+                            </view>
+                            <view class="used">已领取 0 张，已使用 0 张</view>
+                        </view>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1192}}">结束</at-button>
+            </view>
+        </view>
+    </root>
+</block>

@@ -1,0 +1,19 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="writePrice-wrapper">
+        <view class="header">
+            <view class="content">
+                <view class="title">您的人均消费客单价估算是多少？</view>
+                <view class="desc">填写客单价，能更好的获取及推送进准客户群体</view>
+            </view>
+        </view>
+        <view class="writePrice-container">
+            <view class="title">填写客单价</view>
+            <view class="content-box">
+                <input class="number-input" type="digit" placeholder="例如：58" /><text class="extra">元</text>
+            </view>
+        </view>
+        <view class="button-position">
+            <at-button compid="{{$compid__955}}">太棒了，马上完成注册</at-button>
+        </view>
+    </view>
+</block>

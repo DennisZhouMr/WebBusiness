@@ -1,0 +1,62 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1560}}">
+        <view class="common-wrapper activity-wrapper">
+            <nav-bar compid="{{$compid__1561}}"></nav-bar>
+            <view class="activity-main">
+                <view class="default-list-container activity-info show-last-border">
+                    <view class="header">
+                        <view class="content">
+                            <view class="title">直接发券</view>
+                            <view>您可以通过微信分享发放优惠券，也可以让顾客去线上门店主页领取或直接发送给门店以后的会员，扩大优惠券的发放范围，有效提高复购率</view>
+                        </view>
+                        <view></view>
+                    </view>
+                    <view class="caption">活动规则</view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">活动名称*</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1562}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">发券总数</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1563}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="caption">优惠礼券</view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">券类型</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1564}}"></at-input>
+                                </view>
+                                <view class="list-item-extra_icon">
+                                    <icon-font compid="{{$compid__1565}}"></icon-font>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1566}}">创建</at-button>
+            </view>
+        </view>
+    </root>
+</block>

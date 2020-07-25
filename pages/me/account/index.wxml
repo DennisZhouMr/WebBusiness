@@ -1,0 +1,27 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1628}}">
+        <view class="common-wrapper account-wrapper">
+            <caption compid="{{$compid__1629}}"></caption>
+            <view class="account-main">
+                <view class="group-container">
+                    <view class="group-top shop-group"><text class="left">商家注册的名称</text><text class="right">商户编号： SX313972</text>
+                    </view>
+                    <at-list compid="{{$compid__1630}}">
+                        <at-list-item compid="{{$compid__1631}}"></at-list-item>
+                        <at-list-item compid="{{$compid__1632}}"></at-list-item>
+                        <at-list-item compid="{{$compid__1633}}"></at-list-item>
+                    </at-list>
+                </view>
+                <at-list compid="{{$compid__1634}}">
+                    <at-list-item compid="{{$compid__1635}}"></at-list-item>
+                </at-list>
+                <view class="common-button">
+                    <at-button>退出登录</at-button>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1636}}">返回</at-button>
+            </view>
+        </view>
+    </root>
+</block>

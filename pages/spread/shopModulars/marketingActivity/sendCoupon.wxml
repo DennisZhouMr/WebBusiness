@@ -1,0 +1,76 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1567}}">
+        <view class="common-wrapper detail-wrapper">
+            <nav-bar compid="{{$compid__1568}}"></nav-bar>
+            <view class="detail-main">
+                <view class="header_title">
+                    <view class="title">活动进行中</view>
+                    <view>活动为期 30 天，当前第 1 天</view>
+                </view>
+                <at-tabs compid="{{$compid__1569}}">
+                    <at-tabs-pane compid="{{$compid__1570}}">
+                        <view class="effect-dl" wx:key="id" wx:for="{{activeEffect}}" wx:for-item="item" wx:for-index="_anonIdx4">
+                            <view class="dt">{{item.title}}</view>
+                            <view class="at-row dd-box">
+                                <view class="at-col at-col-6 dd" wx:key="id" wx:for="{{item.child}}" wx:for-item="sItem" wx:for-index="_anonIdx2">
+                                    <view class="num">{{sItem.num}}</view>
+                                    <view class="text">{{sItem.title}}</view>
+                                </view>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__1571}}">
+                        <view>
+                            <view class="detail-container">
+                                <view class="detail-list">
+                                    <view class="title">活动规则</view>
+                                    <view class="detail-list-item">
+                                        <view class="content">活动名称</view>
+                                        <view class="extra">读取名称参数</view>
+                                    </view>
+                                </view>
+                                <view class="detail-list">
+                                    <view class="title">优惠券</view>
+                                    <view class="detail-list-item">
+                                        <view class="content">券类型</view>
+                                        <view class="extra">折扣券／代金券／礼券／商品券</view>
+                                    </view>
+                                    <view class="detail-list-item">
+                                        <view class="content">优惠名称</view>
+                                        <view class="extra">名称参数</view>
+                                    </view>
+                                    <view class="detail-list-item">
+                                        <view class="content">优惠类型</view>
+                                        <view class="extra">参数</view>
+                                    </view>
+                                    <view class="detail-list-item">
+                                        <view class="content">有效时间</view>
+                                        <view class="extra">参数</view>
+                                    </view>
+                                    <view class="detail-list-item">
+                                        <view class="content">使用条件</view>
+                                        <view class="extra">参数</view>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="send-coupon-list">
+                                <view class="send-coupon-list-item">
+                                    <view class="content">发券总数</view>
+                                    <view class="extra">
+                                        <view class="info">999999</view>
+                                        <view class="icon">
+                                            <icon-font compid="{{$compid__1572}}"></icon-font>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1573}}">终止活动</at-button>
+            </view>
+        </view>
+    </root>
+</block>

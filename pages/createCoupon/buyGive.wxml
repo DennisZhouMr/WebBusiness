@@ -1,0 +1,103 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1000}}">
+        <view class="second-page_container">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1001}}">
+                    <icon-font compid="{{$compid__1002}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <scroll-view class="second-page_main_box form-container" scroll-y="{{true}}">
+                    <view class="form-tit">买赠</view>
+                    <view class="form-desc">例：买二赠三</view>
+                    <at-form>
+                        <view class="form-item">
+                            <view class="form-label">礼券名称</view>
+                            <view class="form-input">
+                                <at-input compid="{{$compid__1003}}"></at-input>
+                            </view>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">有效时间</view>
+                            <picker mode="selector" range="{{pickerObj.timePicker}}" bindchange="anonymousFunc0">
+                                <view class="form-select">
+                                    <view class="text">{{timePickerVal}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1004}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">起始日期</view>
+                            <picker mode="date" bindchange="anonymousFunc1">
+                                <view class="form-select">
+                                    <view class="text">{{startTime}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1005}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">结束日期</view>
+                            <picker mode="date" bindchange="anonymousFunc2">
+                                <view class="form-select">
+                                    <view class="text">{{endTime}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1006}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item no-flex">
+                            <view class="form-item-sb">
+                                <view class="form-label">购买 1 份 赠送 1 份</view>
+                                <view class="form-add">
+                                    <small-switch compid="{{$compid__1007}}"></small-switch>
+                                </view>
+                            </view>
+                            <view class="form-item-sb no-mb">
+                                <view class="form-label">参与活动的商品</view>
+                                <view class="{{'form-add ' + (!buySwtich && 'form-add-disabled')}}">+ 添加</view>
+                            </view>
+                            <view class="form-list">
+                                <form-list wx:key="id" wx:for="{{loopArray85}}" wx:for-item="item" wx:for-index="__index3" compid="{{item.$compid__997}}"></form-list>
+                            </view>
+                            <view class="form-item-sb no-mb">
+                                <view class="form-label">赠送商品</view>
+                                <view class="{{'form-add ' + (!buySwtich && 'form-add-disabled')}}">+ 添加</view>
+                            </view>
+                            <view class="form-list">
+                                <form-list wx:key="id" wx:for="{{loopArray86}}" wx:for-item="item" wx:for-index="__index4" compid="{{item.$compid__998}}"></form-list>
+                            </view>
+                        </view>
+                        <view class="form-item no-flex last">
+                            <view class="form-item-sb">
+                                <view class="form-label">
+                                    <view>满 0 元 赠送 1 份</view>
+                                    <view class="form-label-desc no-mb">0则无门槛</view>
+                                </view>
+                                <view class="form-add">
+                                    <small-switch compid="{{$compid__1008}}"></small-switch>
+                                </view>
+                            </view>
+                            <view class="form-item-sb no-mb">
+                                <view class="form-label">赠送商品</view>
+                                <view class="{{'form-add ' + (!fullSwitch && 'form-add-disabled')}}">+ 添加</view>
+                            </view>
+                            <view class="form-list">
+                                <form-list wx:key="id" wx:for="{{loopArray87}}" wx:for-item="item" wx:for-index="__index5" compid="{{item.$compid__999}}"></form-list>
+                            </view>
+                        </view>
+                    </at-form>
+                </scroll-view>
+            </view>
+            <view class="second-page_footer_wrap">
+                <view class="button-position">
+                    <at-button compid="{{$compid__1009}}">保存</at-button>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

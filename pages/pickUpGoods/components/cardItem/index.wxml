@@ -1,0 +1,11 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="coupon-card_item">
+        <view>
+            <view class="card-tit">{{item.title}}</view>
+            <view class="card-desc">{{item.desc}}</view>
+            <view class="card-time">{{item.time}}</view>
+        </view>
+        <view class="card-num_box"><text class="card-num">{{item.num}}</text><text class="card-text">折</text>
+        </view>
+    </view>
+</block>

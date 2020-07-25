@@ -1,0 +1,110 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1268}}">
+        <view class="common-wrapper employee-add-wrapper">
+            <nav-bar compid="{{$compid__1269}}"></nav-bar>
+            <view class="employee-add-main">
+                <view class="default-list-container employee-add-info">
+                    <view class="title"><text class="left">账号信息</text>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">员工姓名*</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1270}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">登录手机号*</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1271}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">密码*</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1272}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">确认密码*</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1273}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="default-list-container employee-add-info">
+                    <view class="title">基本信息</view>
+                    <view class="list-item list-item-time">
+                        <picker mode="selector" range="{{positionSelector}}" bindchange="handlePositionChange">
+                            <view class="list-item-container">
+                                <view class="list-item-content">
+                                    <view class="list-item-content_title">职位*</view>
+                                </view>
+                                <view class="list-item-extra">
+                                    <view class="list-item-extra_info">
+                                        <at-input compid="{{$compid__1274}}"></at-input>
+                                    </view>
+                                    <view class="list-item-extra_icon">
+                                        <icon-font compid="{{$compid__1275}}"></icon-font>
+                                    </view>
+                                </view>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="list-item list-item-time">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">性别*</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <view class="flex">
+                                        <at-tag wx:key="$loopState__temp3" wx:for="{{loopArray96}}" wx:for-item="item" wx:for-index="__index3" compid="{{item.$compid__1267}}">{{item.$original.name}}</at-tag>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">身份证号</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1276}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1277}}">保存</at-button>
+            </view>
+        </view>
+    </root>
+</block>

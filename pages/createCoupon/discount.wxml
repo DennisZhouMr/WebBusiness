@@ -1,0 +1,83 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__964}}">
+        <view class="second-page_container">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__965}}">
+                    <icon-font compid="{{$compid__966}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <scroll-view class="second-page_main_box form-container" scroll-y="{{true}}">
+                    <view class="form-tit">整单折扣</view>
+                    <view class="form-desc">例：全场8折</view>
+                    <at-form>
+                        <view class="form-item">
+                            <view class="form-label">优惠名称</view>
+                            <view class="form-input">
+                                <at-input compid="{{$compid__967}}"></at-input>
+                            </view>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">有效时间</view>
+                            <picker mode="selector" range="{{pickerObj.timePicker}}" bindchange="anonymousFunc0">
+                                <view class="form-select">
+                                    <view class="text">{{timePickerVal}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__968}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">起始日期</view>
+                            <picker mode="date" bindchange="anonymousFunc1">
+                                <view class="form-select">
+                                    <view class="text">{{startTime}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__969}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">结束日期</view>
+                            <picker mode="date" bindchange="anonymousFunc2">
+                                <view class="form-select">
+                                    <view class="text">{{endTime}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__970}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">整单折扣率</view>
+                            <view class="form-input">
+                                <at-input compid="{{$compid__971}}"></at-input>
+                            </view>
+                        </view>
+                        <view class="form-item no-flex">
+                            <view class="form-label">使用规则</view>
+                            <view class="form-label-desc">满输入金额为“0”元时，为无门槛</view>
+                            <view class="form-price"><text>满</text>
+                                <at-input compid="{{$compid__972}}"></at-input><text>元可用</text>
+                            </view>
+                        </view>
+                        <view class="form-item last">
+                            <view class="form-label">不参与活动商品(0)</view>
+                            <view class="form-add">+ 添加</view>
+                        </view>
+                        <view class="form-list">
+                            <form-list wx:key="id" wx:for="{{loopArray82}}" wx:for-item="item" wx:for-index="__index3" compid="{{item.$compid__963}}"></form-list>
+                        </view>
+                    </at-form>
+                </scroll-view>
+            </view>
+            <view class="second-page_footer_wrap">
+                <view class="button-position">
+                    <at-button compid="{{$compid__973}}">保存</at-button>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

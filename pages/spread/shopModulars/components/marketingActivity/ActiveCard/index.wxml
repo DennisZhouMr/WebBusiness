@@ -1,0 +1,20 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="getCustomer-active_container" bindtap="funPrivateciezz">
+        <view class="content">
+            <view class="tit">
+                <view>{{item.title}}</view>
+                <button class="default-button">{{item.tag}}</button>
+            </view>
+            <view class="desc">
+                <view><text>{{item.desc}}</text>
+                </view>
+            </view>
+            <view class="time">{{item.time}}</view>
+        </view>
+        <view class="at-row group-bottom">
+            <view class="at-col at-col-6">门店海报</view>
+            <view class="at-col at-col-6">分享活动</view>
+        </view>
+        <view class="tip">系统创建</view>
+    </view>
+</block>

@@ -1,0 +1,43 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="collection-container">
+        <view class="">
+            <view class="caption">
+                <view class="img-icon"></view>
+                <view class="text">收款账户</view>
+            </view>
+            <view class="open-wrap">
+                <view class="open-caption black ellipsis">使用微信提现不收手续费</view>
+                <view class="open-box advantage">
+                    <view class="title">
+                        <view class="text">开通微信自动提现</view>
+                        <at-icon compid="{{$compid__1582}}"></at-icon>
+                    </view>
+                    <view class="desc">开通自动提现，余额自动提现至微信钱包</view>
+                    <view class="switch-box">
+                        <small-switch compid="{{$compid__1583}}"></small-switch>
+                    </view>
+                </view>
+            </view>
+            <view class="bind-wrap">
+                <view class="advantage">
+                    <view class="title">
+                        <view class="text">开通微信自动提现</view>
+                        <at-icon compid="{{$compid__1584}}"></at-icon>
+                    </view>
+                    <view>
+                        <view class="s-title">多种收款方式</view>
+                        <view class="desc">支持二维码、扫码枪、收款盒等多种方式</view>
+                    </view>
+                    <view>
+                        <view class="s-title mt-40">到账准时安全</view>
+                        <view class="desc">无需手动提现，自动打款至银行卡</view>
+                    </view>
+                    <at-button compid="{{$compid__1585}}">未开通</at-button>
+                </view>
+            </view>
+        </view>
+        <view class="btn-bottom">
+            <at-button>返回</at-button>
+        </view>
+    </view>
+</block>

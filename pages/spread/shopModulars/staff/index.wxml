@@ -1,0 +1,25 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1257}}">
+        <view class="common-wrapper staff-wrapper">
+            <caption compid="{{$compid__1258}}"></caption>
+            <view class="staff-main">
+                <view class="group">
+                    <view class="title">超级管理员</view>
+                    <view class="list">
+                        <view class="content bold">管理员</view>
+                    </view>
+                </view>
+                <view class="group">
+                    <view class="title subTitle">收银员(系统默认）</view>
+                    <view class="list" bindtap="anonymousFunc0">
+                        <view class="content">周凯</view>
+                        <view class="extra">
+                            <icon-font compid="{{$compid__1259}}"></icon-font>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <tab-bar-bottom compid="{{$compid__1260}}"></tab-bar-bottom>
+        </view>
+    </root>
+</block>

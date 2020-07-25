@@ -1,0 +1,21 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="home">
+        <root-components compid="{{$compid__1101}}">
+            <view class="main">
+                <block wx:if="{{current === 0}}">
+                    <spread-index></spread-index>
+                </block>
+                <block wx:if="{{current === 1}}">
+                    <interconnect-index></interconnect-index>
+                </block>
+                <block wx:if="{{current === 3}}">
+                    <statement-index></statement-index>
+                </block>
+                <block wx:if="{{current === 4}}">
+                    <me-index></me-index>
+                </block>
+            </view>
+            <tab-bar-bottom compid="{{$compid__1102}}"></tab-bar-bottom>
+        </root-components>
+    </view>
+</block>

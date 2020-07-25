@@ -1,0 +1,176 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1126}}">
+        <view class="common-wrapper storeInfo-edit-wrapper">
+            <caption compid="{{$compid__1127}}"></caption>
+            <view class="shopkeeper-main">
+                <view class="group-container">
+                    <view class="group-top shopkeeper-group"><text>温馨提示：请正确填写门店地址及联系电话等信息</text>
+                    </view>
+                </view>
+                <view class="default-list-container">
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">商户编号</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1128}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">门店名称</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1129}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">经营业态</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">小吃/快餐</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">商铺描述</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-textarea compid="{{$compid__1130}}"></at-textarea>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="default-list-container store-edit-list">
+                    <view class="list-item">
+                        <picker mode="region" bindchange="handlePickerChange">
+                            <view class="list-item-container">
+                                <view class="list-item-content">
+                                    <view class="list-item-content_title">所在区域</view>
+                                </view>
+                                <view class="list-item-extra">
+                                    <view class="list-item-extra_info">
+                                        <at-input compid="{{$compid__1131}}"></at-input>
+                                    </view>
+                                    <view class="list-item-extra_icon">
+                                        <icon-font compid="{{$compid__1132}}"></icon-font>
+                                    </view>
+                                </view>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">门店地址</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1133}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item list-item-time">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">营业时间</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item list-item-time">
+                        <picker mode="selector" range="{{weekSelector}}" bindchange="handleWeekChange">
+                            <view class="list-item-container">
+                                <view class="list-item-content">
+                                    <view class="list-item-content_title">星期</view>
+                                </view>
+                                <view class="list-item-extra">
+                                    <view class="list-item-extra_info">
+                                        <at-input compid="{{$compid__1134}}"></at-input>
+                                    </view>
+                                    <view class="list-item-extra_icon">
+                                        <icon-font compid="{{$compid__1135}}"></icon-font>
+                                    </view>
+                                </view>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="list-item list-item-time border">
+                        <picker mode="time" bindchange="onTimeChange">
+                            <view class="list-item-container">
+                                <view class="list-item-content">
+                                    <view class="list-item-content_title">时段</view>
+                                </view>
+                                <view class="list-item-extra">
+                                    <view class="list-item-extra_info">
+                                        <at-input compid="{{$compid__1136}}"></at-input>
+                                    </view>
+                                    <view class="list-item-extra_icon">
+                                        <icon-font compid="{{$compid__1137}}"></icon-font>
+                                    </view>
+                                </view>
+                            </view>
+                        </picker>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">客服电话</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">
+                                    <at-input compid="{{$compid__1138}}"></at-input>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="default-list-container">
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">人均客单价</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info place">
+                                    <at-input compid="{{$compid__1139}}"></at-input>元</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="default-list-container">
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">门店logo</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_info">品牌logo</view>
+                                <view class="list-item-extra_icon">
+                                    <icon-font compid="{{$compid__1140}}"></icon-font>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1141}}">保存</at-button>
+            </view>
+        </view>
+    </root>
+</block>

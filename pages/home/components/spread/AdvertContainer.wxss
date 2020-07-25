@@ -1,0 +1,1 @@
+.advert-container{width:94.67%;margin:0 auto}.advert-container .caption{line-height:42rpx;padding:40rpx 30rpx 30rpx;font-size:32rpx;font-weight:800}.advert-container .advert-wrap{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}.advert-container .advert-wrap .advert-item-box{width:30%}

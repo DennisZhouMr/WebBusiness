@@ -1,0 +1,56 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1170}}">
+        <view class="common-wrapper activite-wrapper">
+            <nav-bar compid="{{$compid__1171}}"></nav-bar>
+            <view class="activite-main">
+                <vip-card compid="{{$compid__1172}}"></vip-card>
+                <view class="box">
+                    <view class="title">
+                        <view>您即刻享有的权益</view>
+                        <view class="subTitle">我是能自成长升等级的权益卡哦～</view>
+                    </view>
+                    <view class="at-row at-row--wrap content">
+                        <view class="at-col at-col-6">
+                            <icon-font compid="{{$compid__1173}}"></icon-font>
+                            <view class="caption">每日优惠</view>
+                            <view>整单9.5折</view>
+                            <view>不参与优惠活动商品除外</view>
+                        </view>
+                        <view class="at-col at-col-6">
+                            <icon-font compid="{{$compid__1174}}"></icon-font>
+                            <view class="caption">买单必赠</view>
+                            <view>单单赠送</view>
+                            <view>活动期间首单赠送双倍积分</view>
+                        </view>
+                        <view class="at-col at-col-6">
+                            <icon-font compid="{{$compid__1175}}"></icon-font>
+                            <view class="caption">打赏活动</view>
+                            <view>你、我、Ta之间的相互约定</view>
+                            <view>有趣、有料，在互动中去体验</view>
+                            <view>完成获得到商家打赏礼包</view>
+                        </view>
+                        <view class="at-col at-col-6">
+                            <icon-font compid="{{$compid__1176}}"></icon-font>
+                            <view class="caption">积分兑换</view>
+                            <view>积分可以用来抵扣</view>
+                            <view>也可以免费兑换好物</view>
+                            <view>满足你不同需求</view>
+                        </view>
+                    </view>
+                    <view class="acitvite-bottom">
+                        <view class="caption">会员激活礼</view>
+                        <view>激活即享优惠折扣并赠双倍积分</view>
+                        <view>另赠礼券名 (剩余100张送完即止)</view>
+                        <view class="tip">优惠券不能与首次买单权益同享</view>
+                    </view>
+                </view>
+                <view class="footer-content">
+                    <at-button compid="{{$compid__1177}}">确定</at-button>
+                    <view bindtap="anonymousFunc1">
+                        <icon-font compid="{{$compid__1178}}"></icon-font>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

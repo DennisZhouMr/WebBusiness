@@ -1,0 +1,1 @@
+.cartcontrol{font-size:24rpx;color:#ff3f81;font-weight:400}.cartcontrol .count{display:inline-block;margin:0 18rpx}.cartcontrol .add,.cartcontrol .decrease{display:inline-block;border-radius:50%;width:30rpx;height:30rpx;text-align:center;line-height:28rpx}.cartcontrol .add{background:#ff3f81;color:#fff}.cartcontrol .decrease{background:#e4e4e4}

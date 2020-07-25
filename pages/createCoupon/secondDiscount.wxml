@@ -1,0 +1,97 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1031}}">
+        <view class="second-page_container">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1032}}">
+                    <icon-font compid="{{$compid__1033}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <scroll-view class="second-page_main_box form-container" scroll-y="{{true}}">
+                    <view class="form-tit">相同商品第二份优惠</view>
+                    <view class="form-desc">例：第二杯相同饮料半价</view>
+                    <at-form>
+                        <view class="form-item">
+                            <view class="form-label">优惠名称</view>
+                            <view class="form-input">
+                                <at-input compid="{{$compid__1034}}"></at-input>
+                            </view>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">有效时间</view>
+                            <picker mode="selector" range="{{pickerObj.timePicker}}" bindchange="anonymousFunc0">
+                                <view class="form-select">
+                                    <view class="text">{{timePickerVal}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1035}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">起始日期</view>
+                            <picker mode="date" bindchange="anonymousFunc1">
+                                <view class="form-select">
+                                    <view class="text">{{startTime}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1036}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">结束日期</view>
+                            <picker mode="date" bindchange="anonymousFunc2">
+                                <view class="form-select">
+                                    <view class="text">{{endTime}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1037}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <view class="form-item">
+                            <view class="form-label">第二份优惠方式</view>
+                            <picker mode="selector" range="{{pickerObj.discountWayPicker}}" bindchange="anonymousFunc3">
+                                <view class="form-select">
+                                    <view class="text">{{discountWayPickerVal}}</view>
+                                    <view class="icon-box">
+                                        <icon-font compid="{{$compid__1038}}"></icon-font>
+                                    </view>
+                                </view>
+                            </picker>
+                        </view>
+                        <block wx:if="{{discountWayPickerVal === '减免金额'}}">
+                            <view class="form-item">
+                                <view class="form-label">减免金额</view>
+                                <view class="form-input fi-inline">
+                                    <at-input compid="{{$compid__1039}}"></at-input><text>元</text>
+                                </view>
+                            </view>
+                        </block>
+                        <block wx:if="{{discountWayPickerVal === '打折'}}">
+                            <view class="form-item">
+                                <view class="form-label">第二份折扣率</view>
+                                <view class="form-input">
+                                    <at-input compid="{{$compid__1040}}"></at-input>
+                                </view>
+                            </view>
+                        </block>
+                        <view class="form-item last">
+                            <view class="form-label">活动商品({{goodsList.length}})</view>
+                            <view class="form-add">+ 添加</view>
+                        </view>
+                        <view class="form-list">
+                            <form-list wx:key="id" wx:for="{{loopArray89}}" wx:for-item="item" wx:for-index="__index4" compid="{{item.$compid__1030}}"></form-list>
+                        </view>
+                    </at-form>
+                </scroll-view>
+            </view>
+            <view class="second-page_footer_wrap">
+                <view class="button-position">
+                    <at-button compid="{{$compid__1041}}">保存</at-button>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

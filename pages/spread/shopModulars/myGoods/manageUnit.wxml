@@ -1,0 +1,33 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1421}}">
+        <view class="common-wrapper addActivity-add-wrapper">
+            <nav-bar compid="{{$compid__1422}}"></nav-bar>
+            <view class="addActivity-add-main">
+                <view class="default-list-container addActivity-add-info">
+                    <view class="list-item" wx:key="id" wx:for="{{loopArray108}}" wx:for-item="item" wx:for-index="__index0">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">{{item.$original.name}}</view>
+                            </view>
+                            <view class="list-item-extra">
+                                <view class="list-item-extra_icon" bindtap="anonymousFunc0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                                    <icon-font compid="{{item.$compid__1420}}"></icon-font>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="list-item">
+                        <view class="list-item-container">
+                            <view class="list-item-content"></view>
+                            <view class="list-item-extra color-FF3F81" bindtap="anonymousFunc1">+ 添加单位</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1423}}">完成</at-button>
+            </view>
+        </view>
+        <modal compid="{{$compid__1424}}"></modal>
+    </root>
+</block>

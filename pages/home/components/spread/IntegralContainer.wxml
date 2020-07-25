@@ -1,0 +1,28 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="integral-container">
+        <view class="integral-wrap">
+            <at-icon compid="{{$compid__1779}}"></at-icon>
+            <view class="progress-wrap">
+                <view class="progress-box">
+                    <view class="progress">
+                        <view class="circle"></view>
+                        <view class="line"></view>
+                        <view class="circle"></view>
+                        <view class="progress" style="{{anonymousState__temp}}">
+                            <view class="circle"></view>
+                            <view class="line"></view>
+                            <view class="circle2"></view>
+                        </view>
+                    </view>
+                </view>
+                <view class="progress-text">
+                    <view class="text1">可用积分：2000</view>
+                    <view>冻结积分：0</view>
+                </view>
+            </view>
+            <view class="btn-wrap item">
+                <at-button compid="{{$compid__1780}}">查看</at-button>
+            </view>
+        </view>
+    </view>
+</block>

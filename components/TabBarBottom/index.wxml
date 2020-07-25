@@ -1,0 +1,14 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="tabBar-wrap">
+        <view class="special">
+            <view class="box-container" bindtap="anonymousFunc0">
+                <view class="circle">
+                    <view class="icon">
+                        <icon-font compid="{{$compid__1823}}"></icon-font>
+                    </view>
+                </view><text>{{centerText}}</text>
+            </view>
+        </view>
+        <at-tab-bar compid="{{$compid__1824}}"></at-tab-bar>
+    </view>
+</block>

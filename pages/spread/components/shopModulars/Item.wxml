@@ -1,0 +1,22 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="shop-modulars-item">
+        <view class="icon-box">
+            <block wx:if="{{data.icon}}">
+                <icon-font compid="{{$compid__1831}}"></icon-font>
+            </block>
+        </view>
+        <view class="title ellipsis">{{data.title}}</view>
+        <view class="desc ellipsis">{{data.desc}}</view>
+        <view class="tag">
+            <block wx:if="{{data.btnType === 'edit'}}">
+                <at-tag compid="{{$compid__1832}}">{{data.btnText}}</at-tag>
+            </block>
+            <block wx:if="{{data.btnType === 'done'}}">
+                <at-tag compid="{{$compid__1833}}">{{data.btnText}}</at-tag>
+            </block>
+            <block wx:if="{{data.btnType === 'disabled'}}">
+                <at-tag compid="{{$compid__1834}}">{{data.btnText}}</at-tag>
+            </block>
+        </view>
+    </view>
+</block>

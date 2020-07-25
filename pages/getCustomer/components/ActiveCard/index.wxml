@@ -1,0 +1,17 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="getCustomer-active_container" bindtap="funPrivatechhzz">
+        <view class="tit">
+            <view>{{item.title}}</view>
+            <at-button compid="{{$compid__1790}}">分享邀约</at-button>
+        </view>
+        <view class="desc">
+            <view><text>{{item.desc}}</text>
+            </view>
+            <view>
+                <at-button compid="{{$compid__1791}}">分享活动</at-button>
+            </view>
+        </view>
+        <view class="time">{{item.time}}</view>
+        <view class="tip">系统创建</view>
+    </view>
+</block>

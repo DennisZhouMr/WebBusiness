@@ -1,0 +1,13 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{'list-text-item flex ' + className}}" bindtap="handleClick">
+        <view class="lti-label">{{label}}</view>
+        <view class="lti-val flex1">
+            <block>
+                <block wx:if="{{val}}">{{val}}</block>
+                <block wx:else>
+                    <slot></slot>
+                </block>
+            </block>
+        </view>
+    </view>
+</block>

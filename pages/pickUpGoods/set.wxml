@@ -1,0 +1,57 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__948}}">
+        <view class="second-page_container pick-up-goods-set_container">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__949}}">
+                    <icon-font compid="{{$compid__950}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <view class="second-page_main_box pick-up-goods-set_main_box">
+                    <view class="tit">提货激励礼品</view>
+                    <view class="desc">为满足不同需求，礼品可以设置多个及多种类型，顾客在选择提货点时，可以查看到相应的赠品，顾客在选择相应提货点提货下单，到店取货核销完成后，赠品系统将自动派发</view>
+                    <view class="tit2">激励礼品</view>
+                    <view class="dl">
+                        <view class="dt">赠送积分</view>
+                        <view class="dd">10 积分</view>
+                    </view>
+                    <view class="dl no-border">
+                        <view class="dt">券类型</view>
+                        <block>
+                            <block wx:if="{{couponList.length > 0}}">
+                                <view class="dd">
+                                    <icon-font compid="{{$compid__951}}"></icon-font>
+                                </view>
+                            </block>
+                            <block wx:else>
+                                <view class="select-box" bindtap="anonymousFunc0">
+                                    <view class="dd">请选择添加</view>
+                                    <view class="dd">
+                                        <icon-font compid="{{$compid__952}}"></icon-font>
+                                    </view>
+                                </view>
+                            </block>
+                        </block>
+                    </view>
+                    <block wx:if="{{couponList.length > 0}}">
+                        <view>
+                            <card-item wx:key="id" wx:for="{{loopArray80}}" wx:for-item="item" wx:for-index="_anonIdx2" compid="{{item.$compid__947}}"></card-item>
+                            <view class="go-on"><text bindtap="anonymousFunc1">+ 继续添加</text>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+            <view class="second-page_footer_wrap">
+                <view class="button-position">
+                    <view class="check-box">
+                        <at-checkbox compid="{{$compid__953}}"></at-checkbox><text>《用户开通线下提货点协议》</text>
+                    </view>
+                    <view>
+                        <at-button compid="{{$compid__954}}">开通并保存</at-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

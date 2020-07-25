@@ -1,0 +1,15 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="info-container">
+        <view class="data-wrap">
+            <statistic compid="{{$compid__1781}}"></statistic>
+            <statistic compid="{{$compid__1782}}"></statistic>
+        </view>
+        <view class="today-wrap">
+            <view class="order-number">当日订单数（线上）<text>0</text>
+            </view>
+            <view>
+                <at-icon compid="{{$compid__1783}}"></at-icon>
+            </view>
+        </view>
+    </view>
+</block>

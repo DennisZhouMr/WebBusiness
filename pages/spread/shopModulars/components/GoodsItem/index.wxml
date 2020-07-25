@@ -1,0 +1,62 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="goods-item-container">
+        <view class="goods-item">
+            <view class="content" bindtap="skipUrl">
+                <view class="picture">
+                    <icon-font compid="{{$compid__1813}}"></icon-font>
+                </view>
+                <view class="detail">
+                    <view class="gid-tit ellipsis">{{dateSouce.name}}商品名称商品名称商品名称商品名称商品名称商品名称商品名称</view>
+                    <view class="gid-desc">{{dateSouce.desc}}</view>
+                    <view class="gid-norms flex vc">
+                        <view><text>销量</text>{{dateSouce.sales}}</view>
+                        <view class="v-line"></view>
+                        <view><text>库存</text>{{dateSouce.count}}</view>
+                    </view>
+                    <view class="gid-price flex vc">
+                        <view>¥{{dateSouce.price}}</view>
+                        <view class="tag">码</view>
+                    </view>
+                    <view class="gid-time ellipsis"><text>创建时间：</text>{{dateSouce.time}}</view>
+                </view>
+            </view>
+            <block wx:if="{{extra}}">
+                <view class="gi-extra flex hb ">
+                    <view bindtap="skipUrl">
+                        <icon-font compid="{{$compid__1814}}"></icon-font>
+                    </view>
+                    <view bindtap="funPrivatecjbzz">
+                        <icon-font compid="{{$compid__1815}}"></icon-font>
+                    </view>
+                </view>
+            </block>
+            <view class="h-line"></view>
+        </view>
+        <block wx:if="{{dateSouce.showPrompt}}">
+            <view class="gi-prompt flex vc" bindtap="funPrivatecjbzz">
+                <view class="gip-item flex hc vc">
+                    <view class="icon-box">
+                        <icon-font compid="{{$compid__1816}}"></icon-font>
+                    </view>
+                    <view>预览</view>
+                </view>
+                <view class="gip-item flex hc vc">
+                    <view class="icon-box">
+                        <icon-font compid="{{$compid__1817}}"></icon-font>
+                    </view>
+                    <view>分享</view>
+                </view>
+                <view class="gip-item flex hc vc" catchtap="handleDelete">
+                    <view class="icon-box">
+                        <icon-font compid="{{$compid__1818}}"></icon-font>
+                    </view>
+                    <view>删除</view>
+                </view>
+            </view>
+        </block>
+        <modal compid="{{$compid__1819}}">
+            <view style="{{anonymousState__temp2}}">被删除的商品，你和客户将无法看到</view>
+            <view style="{{anonymousState__temp3}}">确定删除这个商品吗？</view>
+        </modal>
+    </view>
+</block>

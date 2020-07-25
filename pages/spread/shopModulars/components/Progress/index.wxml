@@ -1,0 +1,8 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="progress_box" style="{{anonymousState__temp}}">
+        <canvas class="progress_bg" canvas-id="canvasProgressbg" style="{{anonymousState__temp2}}"></canvas>
+        <canvas class="progress_canvas" canvas-id="canvasProgress" style="{{anonymousState__temp3}}"></canvas>
+        <view class="circle_info"><text class="circle_txt">{{progress * 100}}%</text>
+        </view>
+    </view>
+</block>

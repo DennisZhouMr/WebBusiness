@@ -1,0 +1,17 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="{{'custom-checkbox flex vc ' + className}}">
+        <view class="{{'flex hc vc icon-box ' + (checked && 'checked')}}" bindtap="anonymousFunc0">
+            <block wx:if="{{checked}}">
+                <icon-font compid="{{$compid__1810}}"></icon-font>
+            </block>
+        </view>
+        <block>
+            <block wx:if="{{isCustom}}">
+                <slot></slot>
+            </block>
+            <block wx:else>
+                <list-text-item compid="{{$compid__1811}}"></list-text-item>
+            </block>
+        </block>
+    </view>
+</block>

@@ -1,0 +1,46 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1545}}">
+        <view class="common-wrapper detail-wrapper">
+            <nav-bar compid="{{$compid__1546}}"></nav-bar>
+            <view class="detail-main">
+                <at-tabs compid="{{$compid__1547}}">
+                    <at-tabs-pane compid="{{$compid__1548}}">
+                        <view>
+                            <view class="search-bar">
+                                <view class="content">
+                                    <icon-font compid="{{$compid__1549}}"></icon-font>
+                                    <at-input compid="{{$compid__1550}}"></at-input>
+                                </view>
+                                <view class="extra">
+                                    <at-button compid="{{$compid__1551}}">查询</at-button>
+                                </view>
+                            </view>
+                            <view class="remonment-list">
+                                <remonmend-card wx:key="$loopState__temp3" wx:for="{{loopArray122}}" wx:for-item="item" wx:for-index="_anonIdx2" compid="{{item.$compid__1543}}"></remonmend-card>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__1552}}">
+                        <view>
+                            <view class="search-bar">
+                                <view class="content">
+                                    <icon-font compid="{{$compid__1553}}"></icon-font>
+                                    <at-input compid="{{$compid__1554}}"></at-input>
+                                </view>
+                                <view class="extra">
+                                    <at-button compid="{{$compid__1555}}">查询</at-button>
+                                </view>
+                            </view>
+                            <view class="remonment-list">
+                                <remonmend-card wx:key="$loopState__temp5" wx:for="{{loopArray123}}" wx:for-item="item" wx:for-index="_anonIdx4" compid="{{item.$compid__1544}}"></remonmend-card>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1556}}">终止活动</at-button>
+            </view>
+        </view>
+    </root>
+</block>

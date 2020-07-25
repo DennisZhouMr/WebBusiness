@@ -1,0 +1,26 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1264}}">
+        <view class="common-wrapper rank-wrapper">
+            <nav-bar compid="{{$compid__1265}}"></nav-bar>
+            <view class="rank-main">
+                <view class="rank-list">
+                    <view class="rank-list-item">
+                        <view class="content">职位</view>
+                        <view class="extra">{{name}}</view>
+                    </view>
+                    <view class="rank-list-item">
+                        <view class="content">最大折扣率</view>
+                        <view class="extra">80%</view>
+                    </view>
+                    <view class="rank-list-item">
+                        <view class="content">减免金额上限</view>
+                        <view class="extra">99元</view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1266}}">保存</at-button>
+            </view>
+        </view>
+    </root>
+</block>

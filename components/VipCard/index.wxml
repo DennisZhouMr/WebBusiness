@@ -1,0 +1,54 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="vipCard_container" bindtap="skipUrl">
+        <view class="vipCard_wrap">
+            <block wx:if="{{levelVisible}}">
+                <view class="{{'level-box ' + (levelType == 'noActive' ? 'level-box-type' : '') + ' '}}">{{level}}</view>
+            </block>
+            <view class="vipCard_caption">
+                <view class="circle-wrap" bindtap="handleBack">
+                    <view class="circle-box">
+                        <block wx:if="{{face}}">
+                            <image class="image" src="{{face}}" mode="aspectFill"></image>
+                        </block>
+                    </view>
+                </view>
+                <view>
+                    <view>
+                        <image class="icon-star" src="{{anonymousState__temp}}" mode="widthFix"></image>
+                    </view>
+                    <view class="user-info">
+                        <icon-font compid="{{$compid__1826}}"></icon-font>
+                        <view class="name">昵称</view>
+                    </view>
+                </view>
+            </view>
+            <view class="vipCard_main">
+                <view class="coupon">
+                    <block>
+                        <block wx:if="{{type == 'simple'}}">
+                            <view>
+                                <view>可享优惠：</view>
+                                <view class="num"><text>9.5</text>  <text class="text">折</text>{{" "}}</view>
+                            </view>
+                        </block>
+                        <block wx:else>
+                            <view class="detail">
+                                <view class="info">
+                                    <view class="title">门店名称</view>
+                                    <view class="title size">可享优惠：9.5折</view>
+                                </view>
+                                <view class="no">313 9732 6643 8768</view>
+                            </view>
+                        </block>
+                    </block>
+                </view>
+                <view class="right-star"></view>
+                <block wx:if="{{extra}}">
+                    <view>
+                        <icon-font compid="{{$compid__1827}}"></icon-font>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</block>

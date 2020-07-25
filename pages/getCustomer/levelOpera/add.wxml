@@ -1,0 +1,99 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1728}}">
+        <view class="editLevel_container">
+            <view class="editLevel_caption_wrap">
+                <nav-bar compid="{{$compid__1729}}">
+                    <icon-font compid="{{$compid__1730}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="editLevel_main_wrap">
+                <scroll-view class="editLevel_main_box" scroll-y="{{true}}">
+                    <view class="flex">
+                        <view class="font-1 flex1">*该等级有0个会员</view>
+                        <view class="font-2" bindtap="anonymousFunc0">删除</view>
+                    </view>
+                    <view class="ul">
+                        <view class="li flex font-3 border-bottom">
+                            <view class="flex1">等级名称</view>
+                            <view class="flex-shrink font-3">V3权益卡</view>
+                        </view>
+                        <view class="font-4 pt-32">自动升级条件</view>
+                        <view class="font-1">满足以下任意一种条件</view>
+                        <view class="li flex border-bottom">
+                            <view class="flex1 font-3">累积邀请消费人数</view>
+                            <view class="flex-shrink font-3">
+                                <input class="input" placeholder="请输入邀请人数" />
+                            </view>
+                        </view>
+                        <view class="li flex border-bottom">
+                            <view class="flex1 font-3">自消费金额达到</view>
+                            <view class="flex-shrink font-3">
+                                <view class="flex">
+                                    <input placeholder="请输入金额" class="input" /><text class="font-3">元</text>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="li border-bottom">
+                            <view class="flex mb-20">
+                                <view class="flex1 font-3">可享优惠</view>
+                                <view class="flex-shrink font-3">整单折扣</view>
+                            </view>
+                            <view class="flex">
+                                <view class="flex1 font-3">折扣</view>
+                                <view class="flex-shrink font-4">0.0 折</view>
+                            </view>
+                        </view>
+                        <view class="li edit-level-time_box border-bottom">
+                            <view class="edit-level-time_left">
+                                <view class="font-3">设置会员卡有效期</view>
+                                <view class="font-1">会员卡自领卡之日开始有效时间，过期后会员等级重置需店主手动延期激活会员</view>
+                            </view>
+                            <view class="edit-level-time_right" bindtap="showChoiceTime">
+                                <view class="flex-shrink font-3">{{time}}</view>
+                                <view class="flex-shrink">
+                                    <icon-font compid="{{$compid__1731}}"></icon-font>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="li flex border-bottom">
+                            <view class="flex1">
+                                <view class="font-3">激活必填手机号</view>
+                                <view class="font-7">打开后，会员买单享折扣需要填写手机号码</view>
+                            </view>
+                            <view class="flex-shrink">
+                                <small-switch compid="{{$compid__1732}}"></small-switch>
+                            </view>
+                        </view>
+                        <view class="li flex border-bottom">
+                            <view class="flex1 font-3">自定义卡片样式</view>
+                            <view class="flex-shrink">
+                                <small-switch compid="{{$compid__1733}}"></small-switch>
+                            </view>
+                        </view>
+                        <view class="edit-level-card_box">
+                            <view class="edit-level-card_caption"><text class="font-4">温馨提示</text><text class="font-3">（在店铺详情页展现）</text>
+                            </view>
+                            <at-textarea compid="{{$compid__1734}}"></at-textarea>
+                        </view>
+                    </view>
+                </scroll-view>
+            </view>
+            <view class="editLevel_footer_wrap">
+                <view class="button-position">
+                    <at-button compid="{{$compid__1735}}">保存</at-button>
+                </view>
+            </view>
+            <at-action-sheet compid="{{$compid__1736}}">
+                <at-action-sheet-item wx:for="{{loopArray132}}" wx:for-item="item" wx:for-index="__index3" compid="{{item.$compid__1727}}"><text class="{{item.$original.val === time ? 'active' : ''}}">{{item.$original.val}}</text>
+                </at-action-sheet-item>
+            </at-action-sheet>
+            <modal-prop compid="{{$compid__1737}}">
+                <view class="vip-modal-main_box">
+                    <view>确定删除进阶等级</view>
+                    <view>会员权益将无法进阶</view>
+                    <view>请谨慎操作！</view>
+                </view>
+            </modal-prop>
+        </view>
+    </root>
+</block>

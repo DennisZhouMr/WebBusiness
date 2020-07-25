@@ -1,0 +1,25 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1417}}">
+        <view class="common-wrapper addActivity-add-wrapper">
+            <nav-bar compid="{{$compid__1418}}"></nav-bar>
+            <view class="addActivity-add-main">
+                <view class="default-list-container addActivity-add-info show-last-border">
+                    <view class="list-item" wx:key="id" bindtap="anonymousFunc0" wx:for="{{loopArray107}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                        <view class="list-item-container">
+                            <view class="list-item-content">
+                                <view class="list-item-content_title">{{item.$original.name}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <view class="edit-unit" bindtap="handleEdit">
+                    <view class="circle">
+                        <icon-font compid="{{$compid__1419}}"></icon-font>
+                    </view><text>编辑</text>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

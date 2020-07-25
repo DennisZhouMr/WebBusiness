@@ -1,0 +1,18 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="advert-item">
+        <view class="number">
+            <view class="{{'text ' + data.btnType}}">{{data.num}}</view>
+        </view>
+        <view class="advert-main">
+            <view class="img">
+                <icon-font compid="{{$compid__1762}}"></icon-font>
+            </view>
+            <view class="title ellipsis">{{data.title}}</view>
+            <view class="desc ellipsis">{{data.desc}}</view>
+            <view class="{{'special ellipsis color-' + data.btnType}}">{{data.special}}</view>
+            <view class="btn">
+                <at-button compid="{{$compid__1763}}">未解锁</at-button>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,1 @@
+.custom-checkbox .lti-label{font-size:32rpx;color:#434343}.custom-checkbox .icon-box{width:40rpx;height:40rpx;border-radius:40rpx;-webkit-box-sizing:border-box;box-sizing:border-box;border:2PX solid #848484;margin-right:10rpx;overflow:hidden}.custom-checkbox .icon-box.checked{border-color:#fd0;background-color:#fd0}

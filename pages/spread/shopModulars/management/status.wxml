@@ -1,0 +1,25 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1148}}">
+        <view class="common-wrapper manageStatus-wrapper">
+            <view class="header">
+                <view class="content">
+                    <view class="title">您的店铺经营业态是什么？</view>
+                    <view class="desc">根据您的选择，智能提供个性化服务</view>
+                </view>
+            </view>
+            <view class="manageStatus-container">
+                <at-tabs compid="{{$compid__1149}}">
+                    <at-tabs-pane wx:for="{{loopArray93}}" wx:for-item="item" wx:for-index="index" compid="{{item.$compid__1147}}">
+                        <view class="at-row at-row--wrap manage-kind-box">
+                            <view class="at-col at-col-4 tag-item" wx:for="{{item.$anonymousCallee__28}}" wx:for-item="child" wx:for-index="childIndex">
+                                <at-tag wx:key="$loopState__temp3" compid="{{child.$compid__1146}}">{{child.$original.name}}</at-tag>
+                            </view>
+                        </view>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+        </view>
+        <modal compid="{{$compid__1150}}"></modal>
+        <modal compid="{{$compid__1151}}"></modal>
+    </root>
+</block>

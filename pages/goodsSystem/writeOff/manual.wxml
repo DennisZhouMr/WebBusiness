@@ -1,0 +1,34 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1049}}">
+        <view class="second-page_container write-off-index">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1050}}">
+                    <icon-font compid="{{$compid__1051}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <view class="write-off-index_wrap">
+                    <view class="want-container">
+                        <view class="flex he">
+                            <icon-font compid="{{$compid__1052}}"></icon-font>
+                        </view>
+                        <view class="input-box">
+                            <at-input compid="{{$compid__1053}}"></at-input>
+                        </view>
+                    </view>
+                    <view class="record-icon-box">
+                        <view class="inline-block">
+                            <view class="icon-box flex hc vc">
+                                <icon-font compid="{{$compid__1054}}"></icon-font>
+                            </view>
+                            <view>核销记录</view>
+                        </view>
+                    </view>
+                    <view>
+                        <at-button compid="{{$compid__1055}}">验证</at-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

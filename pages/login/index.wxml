@@ -1,0 +1,34 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="login-wrapper">
+        <view class="header">
+            <view class="top">关闭</view>
+            <view class="content">
+                <view class="title">密码登录</view>
+                <view class="desc">HI！用户名，欢迎就来</view>
+            </view>
+        </view>
+        <view class="avatar">
+            <view>
+                <at-avatar compid="{{$compid__918}}"></at-avatar>
+            </view>
+        </view>
+        <view class="login-container">
+            <at-form compid="{{$compid__919}}">
+                <at-input compid="{{$compid__920}}"></at-input>
+                <at-input compid="{{$compid__921}}"></at-input>
+                <at-input compid="{{$compid__922}}">
+                    <at-icon compid="{{$compid__923}}"></at-icon>
+                </at-input>
+            </at-form>
+            <view class="at-row forget-box">
+                <view class="at-col at-col-6 left">忘记商户编码</view>
+                <view class="at-col at-col-6 right">忘记账号密码</view>
+            </view>
+        </view>
+        <view class="button-position">
+            <view class="now-register" bindtap="anonymousFunc4"><text>还没有账号？马上注册</text>
+            </view>
+            <at-button compid="{{$compid__924}}">立即登录</at-button>
+        </view>
+    </view>
+</block>

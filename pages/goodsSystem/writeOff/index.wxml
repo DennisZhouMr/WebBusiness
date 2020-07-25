@@ -1,0 +1,68 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1042}}">
+        <view class="second-page_container write-off-index">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1043}}">
+                    <icon-font compid="{{$compid__1044}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <view class="write-off-index_wrap">
+                    <view class="store-info-box">
+                        <view class="store-info at-row">
+                            <view class="store-pic">
+                                <image class="img" src="{{anonymousState__temp2}}" mode="aspectFill"></image>
+                            </view>
+                            <view>
+                                <view class="store-location">西安</view>
+                                <view>
+                                    <view class="store-name inline-block vm">烤什么名堂</view>
+                                    <view class="store-icon inline-block vm">
+                                        <icon-font compid="{{$compid__1045}}"></icon-font>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="at-row logistics-menu">
+                            <view class="lm-item">
+                                <view class="num">0</view>
+                                <view class="label">待发货</view>
+                            </view>
+                            <view class="lm-item">
+                                <view class="num">0</view>
+                                <view class="label">待到店</view>
+                            </view>
+                            <view class="lm-item">
+                                <view class="num">0</view>
+                                <view class="label">已核销</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="want-container">
+                        <view class="tit">我要核销</view>
+                        <view class="at-row">
+                            <view class="w-item">
+                                <view class="icon-box at-row at-row at-row__justify--center at-row__align--center">
+                                    <icon-font compid="{{$compid__1046}}"></icon-font>
+                                </view>
+                                <view class="ellipsis">扫一扫核销</view>
+                            </view>
+                            <view class="w-item" bindtap="anonymousFunc0">
+                                <view class="icon-box at-row at-row at-row__justify--center at-row__align--center">
+                                    <icon-font compid="{{$compid__1047}}"></icon-font>
+                                </view>
+                                <view class="ellipsis">手工核销</view>
+                            </view>
+                            <view class="w-item">
+                                <view class="icon-box at-row at-row at-row__justify--center at-row__align--center">
+                                    <icon-font compid="{{$compid__1048}}"></icon-font>
+                                </view>
+                                <view class="ellipsis">核销记录</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </root>
+</block>

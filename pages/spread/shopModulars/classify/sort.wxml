@@ -1,0 +1,20 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1306}}">
+        <view class="common-wrapper classify-sort-wrapper">
+            <nav-bar compid="{{$compid__1307}}"></nav-bar>
+            <view class="classify-sort-main">
+                <view class="drag-list">
+                    <view class="drag-list-item">
+                        <view class="content">已创建的分类名称</view>
+                        <view>
+                            <icon-font compid="{{$compid__1308}}"></icon-font>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1309}}">保存</at-button>
+            </view>
+        </view>
+    </root>
+</block>

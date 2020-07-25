@@ -1,0 +1,60 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="register-store-wrapper">
+        <view class="header">
+            <view class="content">
+                <view class="title">您的店铺叫什么？在哪里？</view>
+                <view class="desc">填写准确的信息，将为您提供更多的服务</view>
+            </view>
+        </view>
+        <view class="register-store-container">
+            <view class="custom-list">
+                <view class="list-item">
+                    <view class="list-item-container">
+                        <view class="list-item-content">
+                            <view class="list-item-content_title bold">门店名称</view>
+                        </view>
+                        <view class="list-item-extra">
+                            <view class="list-item-extra_info">
+                                <at-input compid="{{$compid__935}}"></at-input>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="list-item">
+                    <view class="list-item-container">
+                        <view class="list-item-content">
+                            <view class="list-item-content_title bold">所属地区</view>
+                        </view>
+                        <view class="list-item-extra">
+                            <view class="list-item-extra_info">{{location}}</view>
+                            <view class="list-item-extra_icon">
+                                <view class="icon-box">
+                                    <at-icon compid="{{$compid__936}}"></at-icon>
+                                </view>定位</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="list-item">
+                    <view class="list-item-container">
+                        <view class="list-item-content">
+                            <view class="list-item-content_title bold">详细地址</view>
+                        </view>
+                        <view class="list-item-extra">
+                            <view class="list-item-extra_info">
+                                <at-input compid="{{$compid__937}}"></at-input>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="button-position">
+            <block wx:if="{{type == 1}}">
+                <at-button compid="{{$compid__938}}">同意协议并注册</at-button>
+            </block>
+            <block wx:if="{{type == 2}}">
+                <at-button compid="{{$compid__939}}">下一步，选择经营品类</at-button>
+            </block>
+        </view>
+    </view>
+</block>

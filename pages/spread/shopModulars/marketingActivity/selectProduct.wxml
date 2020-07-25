@@ -1,0 +1,26 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1574}}">
+        <view class="common-wrapper select-product-wrapper">
+            <nav-bar compid="{{$compid__1575}}"></nav-bar>
+            <view class="select-product-main">
+                <view class="search-bar">
+                    <view class="extra">
+                        <icon-font compid="{{$compid__1576}}"></icon-font>
+                    </view>
+                    <view class="content">
+                        <icon-font compid="{{$compid__1577}}"></icon-font>
+                        <at-input compid="{{$compid__1578}}"></at-input>
+                    </view>
+                </view>
+                <at-tabs compid="{{$compid__1579}}">
+                    <at-tabs-pane compid="{{$compid__1580}}">
+                        <select-product></select-product>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1581}}">完成</at-button>
+            </view>
+        </view>
+    </root>
+</block>

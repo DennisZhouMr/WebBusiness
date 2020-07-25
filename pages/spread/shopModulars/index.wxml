@@ -1,0 +1,22 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1104}}">
+        <view class="common-wrapper shop-modulars-wrapper">
+            <nav-bar compid="{{$compid__1105}}"></nav-bar>
+            <view class="shop-modulars-main">
+                <view wx:key="" class="list" wx:for="{{loopArray92}}" wx:for-item="item" wx:for-index="__index1">
+                    <view class="caption">{{item.$original.title}}</view>
+                    <view class="item-wrap">
+                        <block wx:if="{{item.$original.children && item.$original.children.length > 0}}">
+                            <view class="item-box" wx:key="" bindtap="anonymousFunc0" wx:for="{{item.$anonymousCallee__27}}" wx:for-item="sItem" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{sItem._$indexKey}}">
+                                <item-components compid="{{sItem.$compid__1103}}"></item-components>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </view>
+            <view class="btn-bottom">
+                <at-button compid="{{$compid__1106}}">预览店铺首页</at-button>
+            </view>
+        </view>
+    </root>
+</block>

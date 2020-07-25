@@ -1,0 +1,55 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1250}}">
+        <view class="common-wrapper integral-wrapper">
+            <caption compid="{{$compid__1251}}"></caption>
+            <view class="integral-main">
+                <view class="top">
+                    <view class="left">
+                        <view class="icon">
+                            <icon-font compid="{{$compid__1252}}"></icon-font>
+                        </view>商户编号:SX313972</view>
+                    <view class="right" bindtap="anonymousFunc0">返回</view>
+                </view>
+                <view class="at-row integral-content">
+                    <view class="at-col at-col-6"><text>当前可用积分</text><text>0</text>
+                    </view>
+                    <view class="at-col at-col-6"><text>当前冻结积分</text><text>0</text>
+                    </view>
+                </view>
+                <view class="integral-container">
+                    <view class="money">
+                        <view>充值金额<text>¥</text>
+                        </view>
+                        <at-input compid="{{$compid__1253}}"></at-input>
+                    </view>
+                    <view class="integral-list">
+                        <view class="integral-list-item">
+                            <view class="content">
+                                <icon-font compid="{{$compid__1254}}"></icon-font><text class="space">积分数量：</text>
+                            </view>
+                            <block>
+                                <block wx:if="{{money !== ''}}">
+                                    <view class="extra number bold">{{money}}</view>
+                                </block>
+                                <block wx:else>
+                                    <view class="extra number">自动生成</view>
+                                </block>
+                            </block>
+                        </view>
+                        <view class="integral-list-item">
+                            <view class="content">支付方式</view>
+                            <view class="extra">
+                                <icon-font compid="{{$compid__1255}}"></icon-font><text class="space">微信</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="button-position">
+                <view class="tips">我已阅读并同意 <text>《积分充值协议》</text>
+                </view>
+                <at-button compid="{{$compid__1256}}">确定充值</at-button>
+            </view>
+        </view>
+    </root>
+</block>

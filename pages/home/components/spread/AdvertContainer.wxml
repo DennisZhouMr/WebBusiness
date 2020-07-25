@@ -1,0 +1,10 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="advert-container">
+        <view class="caption">获客引流</view>
+        <view class="advert-wrap">
+            <view wx:key="" class="advert-item-box" bindtap="anonymousFunc0" wx:for="{{loopArray141}}" wx:for-item="item" wx:for-index="index" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
+                <advert-item compid="{{item.$compid__1776}}"></advert-item>
+            </view>
+        </view>
+    </view>
+</block>

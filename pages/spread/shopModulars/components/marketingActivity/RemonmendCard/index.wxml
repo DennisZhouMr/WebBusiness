@@ -1,0 +1,46 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="remonmend-card-item">
+        <view class="caption">{{datesource.title}}（{{datesource.children.length}}人）</view>
+        <block wx:key="$loopState__temp2" wx:for="{{loopArray147}}" wx:for-item="child" wx:for-index="index">
+            <block wx:if="{{!showMore && index < 2}}">
+                <view class="remmonment-list-item">
+                    <view class="content">
+                        <view class="avatar">
+                            <at-avatar compid="{{child.$compid__1805}}"></at-avatar>
+                        </view>
+                        <view class="info">
+                            <view class="name">{{child.$original.name}}</view>
+                            <block wx:if="{{child.$original.vip}}">
+                                <view class="grade">
+                                    <image src="{{child.$loopState__temp4}}"></image>
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                    <view>{{child.$original.date}}</view>
+                    <view>{{child.$original.integral}}</view>
+                </view>
+            </block>
+            <block wx:if="{{showMore}}">
+                <view class="remmonment-list-item">
+                    <view class="content">
+                        <view class="avatar">
+                            <at-avatar compid="{{child.$compid__1806}}"></at-avatar>
+                        </view>
+                        <view class="info">
+                            <view class="name">{{child.$original.name}}</view>
+                            <block wx:if="{{child.$original.vip}}">
+                                <view class="grade">
+                                    <image src="{{child.$loopState__temp6}}"></image>
+                                </view>
+                            </block>
+                        </view>
+                    </view>
+                    <view class="extra">{{child.$original.date}}
+                        <view>{{child.$original.integral}}</view>
+                    </view>
+                </view>
+            </block>
+        </block>
+    </view>
+</block>

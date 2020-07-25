@@ -1,0 +1,107 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1087}}">
+        <view class="second-page_container order-sendOut">
+            <view class="second-page_caption_wrap">
+                <nav-bar compid="{{$compid__1088}}">
+                    <icon-font compid="{{$compid__1089}}"></icon-font>
+                </nav-bar>
+            </view>
+            <view class="second-page_main_wrap">
+                <scroll-view class="order-sendOut_wrap" scroll-y="{{true}}">
+                    <view class="title">共一个包裹：1个待发货</view>
+                    <view class="opera-box flex hb">
+                        <view class="prev">
+                            <view class="inline-block vm">
+                                <at-icon compid="{{$compid__1090}}"></at-icon>
+                            </view><text class="inline-block vm">上一单</text>
+                        </view>
+                        <view class="next"><text class="inline-block vm">下一单</text>
+                            <view class="inline-block vm">
+                                <at-icon compid="{{$compid__1091}}"></at-icon>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="card-box">
+                        <view class="flex hb vc"><text class="c-tit">收货人信息</text><text class="c-r-text">用户昵称</text>
+                        </view>
+                        <view class="h-line line"></view>
+                        <view class="c-content flex">
+                            <view class="tag">收</view>
+                            <view class="cc-r-text flex1">
+                                <view class="cc-rt-item">
+                                    <list-text-item compid="{{$compid__1092}}"></list-text-item>
+                                </view>
+                                <view class="cc-rt-item">
+                                    <list-text-item compid="{{$compid__1093}}"></list-text-item>
+                                </view>
+                                <view class="cc-rt-item">
+                                    <list-text-item compid="{{$compid__1094}}"></list-text-item>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="card-box">
+                        <view class="flex hb vc"><text class="c-tit">发货面板</text>
+                        </view>
+                        <view class="h-line line"></view>
+                        <view class="c-content flex hb">
+                            <view class="cc-item">
+                                <view class="cc-i-tit">发货方式</view>
+                                <view class="cc-i-picker">
+                                    <picker range="{{pcikerArr.sendType}}" bindchange="anonymousFunc0">
+                                        <view class="flex hb vc"><text>{{sendTypeActive}}</text>
+                                            <view>
+                                                <at-icon compid="{{$compid__1095}}"></at-icon>
+                                            </view>
+                                        </view>
+                                    </picker>
+                                </view>
+                            </view>
+                            <view class="v-line"></view>
+                            <view class="cc-item">
+                                <view class="cc-i-tit">物流公司</view>
+                                <view class="cc-i-picker">
+                                    <picker range="{{pcikerArr.sendCompany}}" bindchange="anonymousFunc1">
+                                        <view class="flex hb vc"><text>{{sendCompanyActive}}</text>
+                                            <view>
+                                                <at-icon compid="{{$compid__1096}}"></at-icon>
+                                            </view>
+                                        </view>
+                                    </picker>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="line"></view>
+                        <view class="orderNo">
+                            <list-text-item compid="{{$compid__1097}}">
+                                <at-input compid="{{$compid__1098}}"></at-input>
+                            </list-text-item>
+                        </view>
+                    </view>
+                    <view class="card-box" wx:key="value" wx:for="{{loopArray91}}" wx:for-item="item" wx:for-index="index">
+                        <view class="og-tit">
+                            <custom-checkbox compid="{{item.$compid__1086}}"></custom-checkbox>
+                        </view>
+                        <view class="h-line line"></view>
+                        <view>
+                            <goods-item wx:key="id" wx:for="{{item.$anonymousCallee__26}}" wx:for-item="sItem" wx:for-index="sIndex" compid="{{sItem.$compid__1084}}">
+                                <custom-checkbox compid="{{sItem.$compid__1085}}"></custom-checkbox>
+                            </goods-item>
+                        </view>
+                    </view>
+                </scroll-view>
+            </view>
+            <view class="second-page_footer_wrap at-row at-row__justify--center">
+                <view class="item">
+                    <at-button compid="{{$compid__1099}}">立即发货</at-button>
+                </view>
+            </view>
+            <modal-prop compid="{{$compid__1100}}">
+                <view class="vip-modal-main_box">
+                    <view>物流公司：顺丰快递</view>
+                    <view>物流单号：1234567890</view>
+                </view>
+            </modal-prop>
+        </view>
+    </root>
+</block>

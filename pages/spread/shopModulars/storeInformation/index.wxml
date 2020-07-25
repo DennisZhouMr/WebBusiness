@@ -1,0 +1,47 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1116}}">
+        <view class="common-wrapper storeinfo-wrapper">
+            <caption compid="{{$compid__1117}}"></caption>
+            <view class="storeinfo-main">
+                <view class="group-container">
+                    <view class="group-top storeinfo-group"><text class="left">商家注册的名称</text><text class="right">商户编号： SX313972</text>
+                    </view>
+                    <view class="group-content storeinfo-list" bindtap="handleClick">
+                        <view class="content">
+                            <view class="title">
+                                <icon-font compid="{{$compid__1118}}"></icon-font><text>小吃/快餐（注册引导页选择的品类）</text>
+                            </view>
+                            <view class="content">
+                                <icon-font compid="{{$compid__1119}}"></icon-font><text>陕西省-西安市-莲湖区</text>
+                            </view>
+                            <view class="content">
+                                <icon-font compid="{{$compid__1120}}"></icon-font><text>莲湖区西门里南马道巷22号</text>
+                            </view>
+                            <view class="content">
+                                <icon-font compid="{{$compid__1121}}"></icon-font><text>人均客单价：58元/人</text>
+                            </view>
+                            <view class="content">
+                                <icon-font compid="{{$compid__1122}}"></icon-font><text>13772005503（默认注册手机号）</text>
+                            </view>
+                        </view>
+                        <view class="extar">
+                            <icon-font compid="{{$compid__1123}}"></icon-font>
+                        </view>
+                    </view>
+                </view>
+                <view class="imagePicker-content">
+                    <view class="image-picker">
+                        <at-image-picker compid="{{$compid__1124}}"></at-image-picker>
+                    </view>
+                    <block wx:if="{{files.length <= 0}}">
+                        <view class="tips"><text>1、添加店铺图片，图片将会显示 在店铺详情页里</text><text>2、可点击图片星号按钮设置为首图 最佳尺寸600*450像素</text><text>3、最多可上传5张</text>
+                        </view>
+                    </block>
+                </view>
+            </view>
+            <view class="button-position">
+                <at-button compid="{{$compid__1125}}">返回</at-button>
+            </view>
+        </view>
+    </root>
+</block>

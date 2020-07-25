@@ -1,0 +1,18 @@
+<block wx:if="{{$taroCompReady}}">
+    <root compid="{{$compid__1310}}">
+        <view class="common-wrapper myGoods-wrapper">
+            <caption compid="{{$compid__1311}}"></caption>
+            <view class="myGoods-main">
+                <at-tabs compid="{{$compid__1312}}">
+                    <at-tabs-pane compid="{{$compid__1313}}">
+                        <goods-tab></goods-tab>
+                    </at-tabs-pane>
+                    <at-tabs-pane compid="{{$compid__1314}}">
+                        <supply-chain-tabs></supply-chain-tabs>
+                    </at-tabs-pane>
+                </at-tabs>
+            </view>
+            <tab-bar-bottom compid="{{$compid__1315}}"></tab-bar-bottom>
+        </view>
+    </root>
+</block>

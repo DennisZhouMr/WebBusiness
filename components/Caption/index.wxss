@@ -1,0 +1,1 @@
+.header-title{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:44PX;width:94.67%;margin:0 auto}.header-title text{padding-left:10rpx;font-size:28rpx;color:#000;font-weight:400}
