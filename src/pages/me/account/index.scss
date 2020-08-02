@@ -1,0 +1,314 @@
+@import "@/assets/css/mixin.scss";
+.common-list {
+  background: linear-gradient(#f0f0f0, #ededed, #ebebeb, #ededed, #f0f0f0);
+  // background: none;
+  &.at-list::after {
+    border-width: 0px;
+  }
+  .at-list__item--thumb {
+    .item-thumb {
+      width: 42px;
+      height: 42px;
+      margin-right: 30px;
+    }
+  }
+  .at-list__item {
+    @include font-style(28px);
+    padding: 31rpx 0;
+    border-bottom: 2px solid #e4e4e4;
+    .item-extra__info {
+      padding-right: 0;
+      @include font-style(24px);
+    }
+    .item-extra__icon-arrow {
+      @include font-style(36px, #434343, bold);
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.common-form {
+  background: linear-gradient(#f0f0f0, #ededed, #ebebeb, #ededed, #f0f0f0);
+  border-width: 0;
+  border-radius: 20px;
+  box-shadow: 0px 4px 6px 0px #e4e4e4;
+  padding: 0 30px;
+  &::after {
+    border-width: 0px;
+  }
+  .form-item {
+    border-bottom: 2px solid #e4e4e4;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .at-input {
+    background-color: inherit;
+    color: #434343;
+    margin-left: 0;
+    &::after {
+      display: none;
+    }
+    .at-input__title {
+      width: 120px;
+      margin-right: 10px;
+      font-size: 28px;
+    }
+    input {
+      @include font-style(28px);
+    }
+    .at-input__icon-close {
+      color: #000;
+      @include font-style(null, #000);
+    }
+    .at-input__children {
+      &::after {
+        border-left-width: 0;
+      }
+    }
+  }
+}
+
+.account-wrapper {
+  padding-bottom: 20px;
+  .account-main {
+    padding: 28px 20px 0;
+    flex-grow: 1;
+    overflow-x: hidden;
+    padding-top: 28px;
+  }
+  .shop-group {
+    .left {
+      color: #fff;
+      flex: auto;
+    }
+    .right {
+      color: #fdd000;
+      width: 50%;
+      text-align: right;
+    }
+  }
+  .operation-list {
+    padding: 0 30px;
+    .at-list__item {
+      &:after {
+        left: 0;
+      }
+    }
+  }
+  .safe-list {
+    margin: 20px 0 60px;
+    padding: 0 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px 0px #e4e4e4;
+    .at-list__item {
+      padding: 20px 0;
+      &:after {
+        display: none;
+      }
+    }
+    .item-extra__info {
+      margin-right: 20px;
+      max-width: initial;
+    }
+  }
+
+  //修改密码
+  .updatePwd-form {
+    margin-top: 32px;
+    .at-list__item {
+      &:after {
+        left: 0px;
+      }
+    }
+  }
+}
+
+//换绑定手机号
+.mobile-group {
+  background: #434343;
+  border-radius: 10px 10px 0 0;
+  padding: 14px 20px 14px 40px;
+  font-size: 24px;
+  margin: 0 30px;
+  display: flex;
+  .group-item {
+    @include flex-center(row, center, null);
+    flex: 1;
+    text {
+      width: 145px;
+    }
+    .at-timeline {
+      position: relative;
+      margin-left: 10px;
+      flex: auto;
+      .timeline-tail {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        border-top: 4px solid #fff;
+        width: calc(100% - 15px);
+      }
+      .timeline-head {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border: 2px solid #fdd000;
+        border-radius: 100%;
+        line-height: 30px;
+        text-align: center;
+        @include font-style(24px);
+      }
+    }
+    &.left {
+      color: #fdd000;
+    }
+    &.right {
+      color: #848484;
+      .at-timeline {
+        margin: 0 10px 0 0;
+      }
+      .timeline-head {
+        right: 0;
+        background-color: #434343;
+        border-color: #848484;
+        color: #848484;
+      }
+      .timeline-tail {
+        right: 15px;
+        left: 0;
+        border-color: #848484;
+      }
+    }
+  }
+}
+.verifyMobile-form {
+  .form-item {
+    @include flex-center(row, null, center);
+    .form-item-content {
+      margin-left: 18px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      .caption {
+        @include font-style(28px);
+        padding-right: 6px;
+      }
+      & > view {
+        flex: 1;
+      }
+    }
+  }
+  .code-button {
+    width: 162px;
+    height: 60px;
+    background: #e4e4e4;
+    @include font-style(24px, #848484);
+  }
+  .code-primary {
+    border: 2px solid #848484;
+  }
+  .code-secondary {
+    border: 2px solid transparent;
+  }
+}
+
+//绑定新手机号
+.bindMobile-group {
+  .group-item {
+    &.left,
+    &.right {
+      color: #fdd000;
+    }
+    &.right {
+      .timeline-head {
+        background-color: #fff;
+        border-color: #fdd000;
+        color: #434343;
+      }
+      .timeline-tail {
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+//安全中心
+.safe-message {
+  margin: 0 30px;
+  color: #000;
+  .safe-title {
+    @include font-style(32px, null, bold);
+    margin-bottom: 20px;
+  }
+  text {
+    font-size: 28px;
+    display: block;
+    line-height: 48px;
+  }
+}
+
+//核对信息
+.safecenter-check-box {
+  .button-group text:last-child {
+    color: #848484;
+  }
+}
+.checkInfo-title {
+  margin: 0 0 60px 30px;
+  @include flex-center(null, null, center);
+  .checkInfo-title-text {
+    @include font-style(32px, #000, bold);
+    margin-left: 20px;
+  }
+}
+.check-message {
+  margin-left: 30px;
+  view {
+    @include font-style(32px, #000);
+    line-height: 62px;
+    text {
+      font-weight: bold;
+    }
+  }
+}
+.check-box {
+  @include flex-center(row, center, center);
+  margin-bottom: 66px;
+  .at-checkbox {
+    background: none;
+    display: flex;
+    align-items: center;
+    &::before,
+    &::after {
+      display: none;
+    }
+    .at-checkbox__option--selected .at-checkbox__icon-cnt {
+      background-color: #229e8e;
+    }
+    .at-checkbox__option-wrap {
+      padding: 0;
+      .at-checkbox__option {
+        padding-left: 0;
+      }
+
+      .at-checkbox__icon-cnt {
+        border-color: #229e8e;
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-top: 0;
+      }
+      .at-checkbox__title {
+        @include font-style(20px);
+      }
+    }
+  }
+  & > text {
+    @include font-style(20px, #229e8e);
+  }
+}

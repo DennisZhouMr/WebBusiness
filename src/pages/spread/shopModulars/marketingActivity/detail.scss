@@ -1,0 +1,175 @@
+@import "@/assets/css/mixin.scss";
+@import "../components/marketingActivity/RemonmendCard/index.scss";
+
+.detail-wrapper {
+  padding-bottom: 20px;
+  .detail-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-x: hidden;
+    height: 100%;
+    .header_title {
+      width: 86.67%;
+      margin: 0 auto;
+      margin: 30px auto 98px;
+      line-height: 32px;
+      @include font-style(24px, #000000);
+      .title {
+        margin-bottom: 10px;
+        line-height: 42px;
+        @include font-style(32px, #000000, bold);
+      }
+    }
+    .activity-tab {
+      width: 94.67%;
+      margin: 0 auto;
+      .at-tabs__header {
+        margin-left: 4%;
+        .at-tabs__item {
+          font-weight: bold;
+          color: #434343;
+          &.at-tabs__item--active {
+            color: #000;
+          }
+        }
+      }
+      .at-tabs-pane {
+        margin-top: 0;
+      }
+    }
+    .effect-dl {
+      padding-top: 40px;
+      margin: 0 4%;
+      .dt {
+        margin-bottom: 60px;
+        @include font-style(28px, #848484, bold);
+      }
+
+      .dd-box {
+        flex-wrap: wrap;
+
+        .dd {
+          margin-bottom: 60px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .num {
+            margin-bottom: 30px;
+            line-height: 52px;
+            @include font-style(40px, #000000, bold);
+          }
+
+          .text {
+            line-height: 36px;
+            @include font-style(28px, #848484);
+          }
+        }
+      }
+      &.totalDetail-dl {
+        .dd-box {
+          display: flex;
+          align-items: center;
+
+          .rateText {
+            color: #e0004e;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .detail-container {
+      padding-top: 40px;
+      margin: 0 4%;
+      .detail-list {
+        margin-bottom: 59px;
+        .title {
+          @include font-style(28px, #848484, bold);
+          margin-bottom: 15px;
+        }
+        .detail-list-item {
+          padding: 15px 0;
+          display: flex;
+          @include font-style(28px, #848484);
+          .content {
+            flex: 1;
+          }
+          .extra {
+            color: #434343;
+          }
+        }
+        .detail-list-table {
+          color: #434343;
+          .at-col {
+            text-align: center;
+          }
+          .bold {
+            font-weight: bold;
+            margin-bottom: 28px;
+          }
+          .left {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+//推荐有礼
+.remonmend-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 0 30px;
+  .title {
+    padding: 30px 0;
+    @include flex-center(row, null);
+    @include font-style(24px, #000);
+    .content {
+      flex: 1;
+      @include font-style(28px, #000, bold);
+    }
+    .extra {
+      @include flex-center(row, flex-end);
+      .info {
+        margin-right: 20px;
+      }
+    }
+  }
+  .remonment-list {
+    @include font-style(24px, #000);
+    .empty {
+      color: #848484;
+      text-align: center;
+      padding-bottom: 30px;
+    }
+  }
+  .down {
+    text-align: center;
+    padding-bottom: 10px;
+    @include flex-center();
+  }
+}
+
+//直接发券
+.send-coupon-list {
+  .send-coupon-list-item {
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    @include flex-center(row, null);
+    @include font-style(24px, #000);
+    .content {
+      flex: 1;
+      @include font-style(28px, #000, bold);
+    }
+    .extra {
+      @include flex-center(row, flex-end);
+      .info {
+        margin-right: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import "@/assets/css/mixin.scss";
+@import "../components/marketingActivity/RemonmendCard/index.scss";
+
+.detail-wrapper {
+  padding-bottom: 20px;
+  .detail-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-x: hidden;
+    height: 100%;
+    .search-bar {
+      padding: 20px 6.67% ;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 6px #e4e4e4;
+      .content {
+        flex: 1;
+        height: 80px;
+        line-height: 80px;
+        border-radius: 40px;
+        padding: 0 30px;
+        background: linear-gradient(90deg, #e5e5e5, #f5f5f5, #f5f5f5, #e0e0e0);
+        box-shadow: inset 10px 25px 5px -10px #d5d5d5;
+        @include flex-center();
+        @include font-style(24px);
+        .input-content {
+          background: none;
+          &::after {
+            display: none;
+          }
+        }
+      }
+      .extra {
+        margin-left: 10px;
+        .btn {
+          width: 107px;
+          height: 60px;
+          line-height: 60px;
+          background: #fdd000;
+          border: none;
+          border-radius: 10px;
+          @include font-style();
+        }
+      }
+    }
+    .activity-tab {
+      .at-tabs__header {
+        margin-left: 7%;
+        .at-tabs__item {
+          font-weight: bold;
+          color: #434343;
+          &.at-tabs__item--active {
+            color: #000;
+          }
+        }
+      }
+      .at-tabs-pane {
+        margin-top: 0;
+      }
+    }
+    .remonment-list {
+      width: 86.67%;
+      margin: 22px auto 0;
+      @include font-style(24px, #000);
+    }
+  }
+}

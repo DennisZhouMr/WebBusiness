@@ -1,0 +1,26 @@
+@import "@/assets/css/mixin.scss";
+.rank-wrapper {
+  padding-bottom: 20px;
+  .rank-main {
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-x: hidden;
+    padding-top: 28px;
+    height: 100%;
+    .rank-list {
+      .rank-list-item {
+        padding: 34px 0;
+        display: flex;
+        border-bottom: 2px solid #e4e4e4;
+        @include font-style();
+        .content {
+          flex: 1;
+          font-weight: bold;
+        }
+        
+      }
+    }
+  }
+}

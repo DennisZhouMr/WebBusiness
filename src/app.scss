@@ -1,0 +1,108 @@
+@import "~taro-ui/dist/style/index.scss";
+@import "@/assets/css/common.scss";
+
+
+html,
+body,
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.at-tab-bar.no-border {
+  background-color: transparent;
+
+  &::after {
+    border: none;
+  }
+
+  .icon {
+    font-size: 42px;
+  }
+}
+
+.gray {
+  background-color: #ededed !important;
+
+  &.at-button {
+    border-color: #ededed !important;
+  }
+}
+
+.gray2 {
+  background-color: #c3c3c3 !important;
+
+  &.at-button {
+    border-color: #c3c3c3 !important;
+  }
+}
+
+.black {
+  background-color: #434343 !important;
+
+  &.at-button {
+    border-color: #434343 !important;
+  }
+}
+
+.green {
+  background-color: #229E8E !important;
+
+  &.at-button {
+    border-color: #229E8E !important;
+  }
+}
+
+.purple {
+  background-color: #F04787 !important;
+
+  &.at-button {
+    border-color: #F04787 !important;
+  }
+}
+
+.yellow {
+  background-color: #FDBB4F !important;
+
+  &.at-button {
+    border-color: #FDBB4F !important;
+  }
+}
+
+.yellow2 {
+  background-color: #FDD000 !important;
+
+  &.at-button {
+    border-color: #FDD000 !important;
+  }
+}
+
+.font-size-14 {
+  font-size: 28px !important;
+}
+
+.font-size-12 {
+  font-size: 24px !important;
+}
+
+.font-color-A0A0A0 {
+  color: #A0A0A0 !important
+}
+
+.font-color-229E8E {
+  color: #229E8E !important
+}
+
+.font-color-FFFFFF {
+  color: #FFFFFF !important
+}
+
+.font-color-434343 {
+  color: #434343 !important
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis
+}

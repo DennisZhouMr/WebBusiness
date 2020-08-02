@@ -1,4 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="getCustomer-footer_container"><text>活动设置疑问？</text><text class="text2">点这里获取帮助</text>
-    </view>
-</block>

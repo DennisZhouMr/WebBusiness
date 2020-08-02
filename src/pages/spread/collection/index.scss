@@ -1,0 +1,120 @@
+
+@import "@/components/SmallSwitch";
+.collection-container {
+  position: relative;
+  padding-bottom: 120px;
+  min-height: 100%;
+  box-sizing: border-box;
+
+  .caption {
+    padding: 118px 30px 52px;
+
+    .img-icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 48px;
+      height: 44px;
+      margin-right: 10px;
+
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 32px;
+      font-weight: 800;
+      color: 000000;
+    }
+  }
+
+  .open-wrap {
+    padding: 0 20px 40px;
+
+    .open-caption {
+      padding: 15px 40px 14px;
+      margin: 0 30px;
+      border-radius: 10px 10px 0 0;
+      font-size: 28px;
+      color: #ffffff;
+    }
+
+    .switch-box {
+      position: absolute;
+      right: 30px;
+      top: 32px;
+    }
+
+    .open-box {
+      padding-right: 60px;
+    }
+  }
+
+  .at-switch {
+    padding: 0 !important;
+  }
+
+  .advantage {
+    position: relative;
+    padding: 32px 30px;
+    border-radius: 20px;
+    background: #FBFBFB;
+    background: -moz-linear-gradient(90deg, #EDEDED, #FBFBFB 30%, #ffffff);
+    background: -webkit-gradient(linear, left top, right top, from(#EDEDED), color-stop(.3, #FBFBFB), to(#ffffff));
+    background: -webkit-linear-gradient(90deg, #EDEDED, #FBFBFB 30%, #ffffff);
+    background: -o-linear-gradient(90deg, #EDEDED, #FBFBFB 30%, #ffffff);
+    background: -ms-linear-gradient(90deg, #EDEDED, #FBFBFB 30%, #ffffff);
+    background: linear-gradient(90deg, #EDEDED, #FBFBFB 30%, #ffffff);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, .2);
+    color: #434343;
+
+    .title {
+      margin-bottom: 6px;
+      font-size: 0;
+
+      .text {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 32px;
+      }
+    }
+
+    .desc {
+      font-size: 24px;
+      color: #898989;
+    }
+
+    .s-title {
+      font-size: 28px;
+    }
+  }
+
+  .bind-wrap {
+    padding: 0 20px 40px;
+
+    .advantage {
+      padding-right: 60px;
+    }
+  }
+
+  .btn-bottom {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+  }
+
+  .at-button {
+    border-color: #898989 !important;
+    color: #898989 !important;
+  }
+
+  .mt-40 {
+    margin-top: 40px;
+  }
+}

@@ -1,5 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="{{'small-switch ' + (isOpen ? 'active' : '')}}" bindtap="funPrivatecjczz">
-        <view class="circle"></view>
-    </view>
-</block>

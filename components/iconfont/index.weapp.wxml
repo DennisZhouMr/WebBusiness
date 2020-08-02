@@ -1,3 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <iconfont name="{{name}}" size="{{anonymousState__temp}}" color="{{color}}"></iconfont>
-</block>

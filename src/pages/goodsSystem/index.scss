@@ -1,0 +1,60 @@
+@import "@/assets/css/mixin.scss";
+@import "@/components/SecondCaption/index.scss";
+
+.system-index-wrap {
+  width: 94.67%;
+  margin: 0 auto;
+  padding: 1px 0;
+
+  .menu-wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+
+    .icon-box {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 20px;
+      background: url("~@/assets/images/circle.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .card-container {
+    margin-top: 40px;
+  }
+
+  .online-order {
+    padding: 30px;
+    font-size: 28px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #848484;
+
+    .title-box {
+      color: #000000;
+
+      .tit {
+        flex: 1;
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .span,
+      .c-icon {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .c-icon {
+        margin-left: 20px;
+      }
+    }
+
+    .no-data {
+      padding: 47px 0 30px;
+      text-align: center;
+      color: #848484;
+    }
+  }
+}

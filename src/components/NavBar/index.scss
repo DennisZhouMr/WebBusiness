@@ -1,0 +1,33 @@
+@import "@/assets/css/mixin.scss";
+.nav-bar-container {
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex: 0 0 44px;
+  height: 44PX;
+  width: 94.67%;
+  margin: 0 auto;
+  @include flex-center();
+  .nav-bar-left,
+  .nav-bar-right {
+    flex: 2;
+    overflow: hidden;
+  }
+  .nav-bar-left {
+    transition: background-color 0.3s;
+    text-align: left;
+    text-overflow: ellipsis;
+    .icon {
+      padding-left: 10px;
+    }
+  }
+  .nav-bar-title {
+    @include text-overflow();
+    @include font-style(28px, #000);
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1;
+    flex: 5;
+  }
+}

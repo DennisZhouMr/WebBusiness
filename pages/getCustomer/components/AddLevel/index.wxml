@@ -1,6 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="getCustomer-addLevel_container" bindtap="skipUrl">
-        <icon-font compid="{{$compid__1794}}"></icon-font>
-        <view class="text">{{text}}</view>
-    </view>
-</block>

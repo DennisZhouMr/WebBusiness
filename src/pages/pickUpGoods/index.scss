@@ -1,0 +1,147 @@
+@import "@/assets/css/mixin.scss";
+@import '@/components/NavBar/index.scss';
+
+.pick-up-goods_container {
+  .nav-bar-container .nav-bar-left {
+    flex-shrink: 0;
+    flex: none;
+    width: 72px;
+  }
+
+  .button-group {
+    padding: 24px 0;
+  }
+
+  .pick-up-goods_main_box {
+    .tit {
+      margin-top: 32px;
+      margin-bottom: 37px;
+      line-height: 42px;
+      @include font-style(36px, #000000, bold);
+    }
+
+    .desc {
+      width: 86.15%;
+      text-align: justify;
+      line-height: 36px;
+      @include font-style(24px, #434343);
+    }
+
+    .tit2 {
+      margin: 50px 0 20px;
+      line-height: 28px;
+      @include font-style(24px, #848484);
+    }
+
+    .desc2 {
+      line-height: 38px;
+      @include font-style(32px, #434343, bold);
+    }
+  }
+}
+
+.pick-up-goods-set_container {
+  &.second-page_container {
+    padding-bottom: 180px;
+  }
+
+  .pick-up-goods-set_main_box {
+    .tit {
+      margin-top: 32px;
+      line-height: 36px;
+      @include font-style(28px, #434343);
+    }
+
+    .desc {
+      width: 86.15%;
+      margin-bottom: 60px;
+      text-align: justify;
+      line-height: 32px;
+      @include font-style(24px, #848484);
+    }
+
+    .tit2 {
+      margin-bottom: 12px;
+      @include font-style(28px, #434343, bold);
+    }
+
+    .dl {
+      @include flex-center(row, space-between);
+      padding: 34px 0;
+      border-bottom: 1PX solid #e4e4e4;
+      @include font-style(28px, #434343);
+
+      &.no-border {
+        border-bottom: none;
+      }
+
+      .select-box {
+        @include flex-center();
+      }
+
+      .dd {
+        margin-left: 20px;
+      }
+    }
+
+    .go-on {
+      @include font-style(28px, #FF3F81);
+      text-align: right;
+    }
+
+  }
+
+  .check-box {
+    @include flex-center(row, center, center);
+    margin-bottom: 32px;
+
+    .at-checkbox {
+      background: none;
+      display: flex;
+      align-items: center;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+
+      .at-checkbox__option--selected .at-checkbox__icon-cnt {
+        background-color: #229e8e;
+      }
+
+      .at-checkbox__option-wrap {
+        padding: 0;
+
+        .at-checkbox__option {
+          padding-left: 0;
+        }
+
+        .at-checkbox__icon-cnt {
+          border-color: #229e8e;
+          width: 30px;
+          min-width: 30px;
+          height: 30px;
+          margin-right: 20px;
+          margin-top: 0;
+        }
+
+        .at-checkbox__title {
+          @include font-style(20px);
+        }
+      }
+    }
+
+    &>text {
+      @include font-style(20px, #229e8e);
+    }
+  }
+
+  .second-page_footer_wrap {
+    height: 180px;
+
+    .gray-button {
+      font-size: 32px;
+      border-radius: 10px;
+    }
+  }
+}

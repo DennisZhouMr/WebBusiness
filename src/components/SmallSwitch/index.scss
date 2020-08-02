@@ -1,0 +1,30 @@
+.small-switch {
+  position: relative;
+  width: 70px;
+  height: 28px;
+  box-sizing: border-box;
+  border: 4px solid #E2DEDD;
+  background-color: #E2DEDD;
+  border-radius: 28px;
+  box-shadow: 0 0 6px inset rgba(0, 0, 0, .2);
+
+  .circle {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    background-color: #EDEAE6;
+    border-radius: 24px;
+    transition: all .3s;
+  }
+
+  &.active {
+    background-color: #FDD000;
+
+    .circle {
+      left: 41px;
+    }
+  }
+}

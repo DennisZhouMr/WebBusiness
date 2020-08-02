@@ -1,9 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="underway-container">
-        <view class="coupon-list" wx:key="type" bindtap="anonymousFunc0" wx:for="{{loopArray155}}" wx:for-item="item" wx:for-index="__index0" data-e-tap-so="this" data-e-tap-a-a="{{item._$indexKey}}">
-            <view class="content"><text class="title">{{item.$original.name}}</text><text class="desc">{{item.$original.desc}}</text><text class="expiry-date">{{item.$original.expiryData}}</text>
-            </view>
-            <view class="type">{{item.$original.type}}</view>
-        </view>
-    </view>
-</block>

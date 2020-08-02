@@ -1,0 +1,14 @@
+.root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .root-main {
+    position: relative;
+    height: 100%;
+    background-size: 100% auto;
+    box-sizing: border-box;
+  }
+}

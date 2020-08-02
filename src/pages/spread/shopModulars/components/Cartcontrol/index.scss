@@ -1,0 +1,24 @@
+@import "@/assets/css/mixin.scss";
+.cartcontrol {
+  @include font-style(24px, #ff3f81);
+  .count {
+    display: inline-block;
+    margin: 0 18px;
+  }
+  .decrease,
+  .add {
+    display: inline-block;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+  }
+  .add {
+    background: #ff3f81;
+    color: #fff;
+  }
+  .decrease {
+    background: #e4e4e4;
+  }
+}

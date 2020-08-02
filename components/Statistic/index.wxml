@@ -1,8 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="Statistic">
-        <view class="text-box">
-            <at-icon compid="{{$compid__1766}}"></at-icon><text class="num">{{num}}</text>
-        </view>
-        <view class="desc">{{desc}}</view>
-    </view>
-</block>

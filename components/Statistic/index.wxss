@@ -1,1 +1,0 @@
-.Statistic{margin-right:40rpx;color:#434343}.Statistic .text-box{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center}.Statistic .num{padding-left:10rpx;line-height:52rpx;font-size:40rpx;font-weight:800}.Statistic .desc{line-height:30rpx;padding-left:40rpx;font-size:24rpx}

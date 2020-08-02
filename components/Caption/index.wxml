@@ -1,5 +1,0 @@
-<block wx:if="{{$taroCompReady}}">
-    <view class="header-title">
-        <icon-font compid="{{$compid__1829}}"></icon-font><text>{{text}}</text>
-    </view>
-</block>

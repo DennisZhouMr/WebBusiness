@@ -1,0 +1,132 @@
+@import "@/assets/css/mixin.scss";
+@import '../../../components/NavBar/index.scss';
+@import '../components/Caption/index.scss';
+@import '../components/TodayData/index.scss';
+@import '../components/LinkCard/index.scss';
+@import '../components/ContentCard/index.scss';
+@import '../../../components/VipCard/index.scss';
+@import '../components/AddLevel/index.scss';
+@import '../components/Footer/index.scss';
+@import "../components/FloatLayout/index.scss";
+@import "@/components/SmallSwitch";
+
+.vip_container {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .vip_caption_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+  }
+
+  .vip_main_wrap {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .v2-tit {
+    margin-bottom: 18px;
+    @include font-style(24px, #229E8E, bold);
+  }
+
+  .text-item {
+    @include flex-center(row, flex-start);
+    line-height: 32px;
+    @include font-style(24px, #434343);
+
+    .label {
+      @include font-style(24px, #229E8E, bold);
+    }
+  }
+
+  .receive-box {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1PX solid #E4E4E4;
+    @include flex-center(row, space-between);
+
+    .tit {
+      line-height: 38px;
+      @include font-style(28px, #434343, bold);
+    }
+
+    .desc {
+      line-height: 32px;
+      @include font-style(24px, #848484);
+    }
+
+    .at-switch {
+      padding: 0
+    }
+  }
+
+  .vip_footer_wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    @include flex-center();
+    overflow: hidden;
+
+    .btn-box {
+      width: 50%;
+
+      .at-button {
+        border-radius: 20px 0 0 0;
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        @include font-style(32px, #434343, bold);
+        background-color: #FDD000;
+        border: 0;
+      }
+    }
+
+    .btn-box-right {
+      .at-button {
+        border-radius: 0 20px 0 0;
+        background-color: #434343;
+        color: #FDD000;
+      }
+    }
+  }
+
+}
+
+.at-float-layout__container {
+  min-height: auto;
+  max-height: auto;
+  background-color: transparent;
+
+  .layout-body,
+  .layout-body__content {
+    min-height: auto;
+    max-height: auto;
+    padding: 0;
+  }
+}
+
+.float-layout-ad_box {
+  padding-top: 60px;
+
+  .ad {
+    @include flex-center();
+    height: 180px;
+    border-radius: 20px;
+    background-color: #E4E4E4;
+    overflow: hidden;
+
+    .image{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

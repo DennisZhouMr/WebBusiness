@@ -1,0 +1,100 @@
+@import "@/assets/css/mixin.scss";
+@import "@/components/SecondCaption/index.scss";
+@import "@/components/CheckBox/index.scss";
+@import "@/components/modal/index.scss";
+
+.order-sendOut {
+
+  .order-sendOut_wrap {
+    height: 100%;
+    margin: 0 auto;
+    padding: 1px;
+    font-size: 28px;
+    color: #434343;
+    box-sizing: border-box;
+
+    .title {
+      width: 94.67%;
+      margin: 40px auto 16px;
+      text-align: center;
+      font-weight: bold;
+      color: #434343;
+    }
+
+    .opera-box {
+      width: 94.67%;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      color: #848484;
+    }
+
+    .card-box {
+      margin: 30px 2.67%;
+      padding: 30px 30px 40px;
+      border-radius: 20px;
+      box-shadow: 0 6px 10px #E4E4E4;
+
+      .c-tit {
+        @include font-style(32px, #434343, bold);
+      }
+
+      .c-r-text {
+        color: #000000;
+      }
+
+      .tag {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 20px;
+        text-align: center;
+        @include font-style(28px, #ffffff);
+        border-radius: 6px;
+        background-color: #229E8E;
+      }
+
+      .cc-rt-item {
+        line-height: 36px;
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .c-content {
+        .cc-item {
+          flex: 1 1 0%;
+        }
+
+        .v-line {
+          flex-shrink: 0;
+          margin: 0 30px;
+        }
+
+        .cc-i-picker {
+          margin-top: 30px;
+          @include font-style(32px, #000000, bold);
+        }
+      }
+
+      .orderNo {
+        margin-top: 30px;
+
+        .lti-label {
+          @include font-style(28px, #434343, bold);
+        }
+      }
+    }
+
+    .h-line {
+      margin: 30px auto;
+    }
+  }
+
+  .second-page_footer_wrap {
+    .btn-yellow {
+      color: #ffffff;
+    }
+  }
+}

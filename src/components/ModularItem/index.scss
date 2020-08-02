@@ -1,0 +1,26 @@
+.modular-item {
+  .item {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    border-left: 1PX solid #e4e4e4;
+    text-align: right;
+  }
+
+  .title {
+    line-height: 42px;
+    font-size: 32px;
+    color: #000000;
+  }
+
+  .desc {
+    line-height: 32px;
+    font-size: 28px;
+    color: #434343;
+  }
+}

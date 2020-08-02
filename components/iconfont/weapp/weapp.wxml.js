@@ -1,1 +1,0 @@
-(wx.webpackJsonp=wx.webpackJsonp||[]).push([[23],{"801":function(p,n,o){p.exports=o.p+"components/iconfont/weapp/weapp.wxml"}},[[801,0]]]);

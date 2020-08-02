@@ -1,0 +1,65 @@
+@import "@/assets/css/mixin.scss";
+.storeinfo-wrapper {
+  padding-bottom: 20px;
+  .storeinfo-main {
+    flex-grow: 1;
+    overflow-x: hidden;
+    width: 94.67%;
+    margin: 0 auto;
+    .storeinfo-group {
+      .left {
+        color: #fff;
+        flex: auto;
+      }
+      .right {
+        color: #fdd000;
+        width: 50%;
+        text-align: right;
+      }
+    }
+    .storeinfo-list {
+      padding: 30px;
+      display: flex;
+      .content {
+        flex: 1;
+        @include font-style(24px);
+        line-height: 40px;
+        & > view {
+          display: flex;
+          align-items: center;
+
+          &.title {
+            font-size: 28px;
+          }
+          text {
+            padding-left: 10px;
+          }
+        }
+      }
+      .extar {
+        padding-top: 10px;
+      }
+    }
+    .imagePicker-content {
+      margin-top: 30px;
+      position: relative;
+      .at-image-picker {
+        .at-image-picker__flex-box {
+          padding: 0 0 10px;
+        }
+      }
+      .tips {
+        width: 374px;
+        margin-left: 10px;
+        @include font-style(24px, #848484);
+        line-height: 34px;
+        position: absolute;
+        left: 34%;
+        top: 0;
+        text {
+          display: block;
+        }
+      }
+    }
+  }
+}
